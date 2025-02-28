@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+.open-sans {
+  font-family: 'Open sans';
+}
+.raleway {
+  font-family: 'Raleway';
+}
+
+
+
+
