@@ -22,6 +22,34 @@
   animation-range: entry 0% cover 40%;
   transition-duration: 100ms;
 }
+.block-animation:hover {
+  box-shadow: 10px 10px 10px rgb(56, 56, 56), -8px -8px 8px #e5e7eb;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50%,
+  60%,
+  90% { 
+    width: 100%; 
+  }
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
+}
+
+
 @media (min-width: 640px) {
   .event-grid {
     display: grid;
