@@ -9,27 +9,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--Font Awesome for icons-->
+  <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
   <!--TailwindCSS-->
   <link href="./css/output.css" rel="stylesheet">
 
   <title>CCC Obanikoro</title>
 </head>
 
-<body class="max-w-full">
+<body class="max-w-full h-screen">
   <!--Header and Nav menu-->
   <header>
 
   </header>
 
   <!--Main-->
-  <main class="open-sans mt-5 px-4 font-medium text-black bg-gray-200">
+  <main id="head" class="open-sans mt-5 px-4 font-medium text-black text-[19px] bg-gray-200">
 
     <!--Upcoming Events title and text-->
-    <section class="pt-2 mb-14">
-      <h1 class="text-3xl mb-5 font-bold mt-5 lg:text-5xl raleway">
+    <section class="pt-2 mb-14 flex flex-col items-center gap-6 text-center justify-center sm:items-start sm:text-left">
+      <h1 class="text-3xl font-bold mt-5 lg:text-5xl raleway">
         What's Happening
       </h1>
-      <p class="text-[1.2rem] mb-5.5">
+      <p class="text-[1.2rem]">
         <!--Brief description abt the events-->
         Join us for our upcoming worship events, where we'll come together to praise, pray, and learn from God's Word. Our worship services are designed to be inspiring, engaging, and relevant to everyday life. We'll have a powerful message, uplifting music, and a chance to connect with others. Whether you're a longtime member or just visiting, we welcome you to join us for this special time of worship and community.
       </p>
@@ -42,32 +44,139 @@
     </section>
 
     <!--Events Listings-->
-    <section id="events" class="mb-14">
+    <section id="events" class="flex flex-col items-center event-grid justify-center gap-6 mb-8 sm:mb-0">
 
-      <!--Events 1-->
-      <article>
-        <a href="./events/juvenile.html">
+      <!--Events 1 Palm sunday--->
+      <article class="flex flex-col bg-white cursor-pointer article max-w-80">
+        <a href="./events/palm-sunday.html">
           <!--Image and Date-->
-          <div>
-            <img src="./images/ccc-juvenile/j1.jpg" alt="kid's harvest image" class="">
-            <div>
-              <p>19</p>
-              <p>Apr</p>
+          <div class="relative">
+            <img src="./images/palm-sunday/p3.jpg" alt="kid's harvest image" class="">
+            <div class="absolute top-0 left-0 px-4 py-3.5 text-center z-20 bg-white sm:px-6 sm:py-5">
+              <p class="text-6xl font-semibold mb-2">13</p>
+              <p class="text-3xl">APR</p>
             </div>
           </div>
           <!--Brief abt the event-->
-          <div>
-            <h2>When kids praise</h2>
-            <div>
-              <i class="fa fas-location"></i>
+          <div class="px-6 py-6 flex flex-col gap-4 items-start">
+            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+              PALM SUNDAY
+            </h2>
+            <div class="mb-1 flex items-center gap-4">
+              <i class="fa-solid fa-location-dot fa-spin" style="color: #1447e6;"></i>
               <p>Church Auditorium</p>
             </div>
-            <div>
-              <i class="fa fas-time"></i>
-              <p>12:00 PM</p>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
+              <p>8:00 AM</p>
             </div>
             <!--Btn for more info-->
-            <button>
+            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2">
+              <a href="./events/palm-sunday.html">
+                Learn more
+              </a>
+            </button>
+          </div>
+
+        </a>
+      </article>
+
+      <!--Events 2 When kids praise-->
+      <article class="flex flex-col bg-white article cursor-pointer max-w-80">
+        <a href="./events/kids-praise.html">
+          <!--Image and Date-->
+          <div class="relative">
+            <img src="./images/kids-praise/p3.jpg" alt="kid's praise" class="">
+            <div class="absolute top-0 left-0 px-4 py-3.5 text-center z-20 bg-white sm:px-6 sm:py-5">
+              <p class="text-6xl font-semibold mb-2">19</p>
+              <p class="text-3xl">APR</p>
+            </div>
+          </div>
+          <!--Brief abt the event-->
+          <div class="px-6 py-6 flex flex-col gap-4 items-start">
+            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+              WHEN KID'S PRAISE
+            </h2>
+            <div class="mb-1 flex items-center gap-4">
+              <i class="fa-solid fa-location-dot fa-spin" style="color: #1447e6;"></i>
+              <p>Church Auditorium</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
+              <p>10:00 AM</p>
+            </div>
+            <!--Btn for more info-->
+            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2">
+              <a href="./events/kids-praise.html">
+                Learn more
+              </a>
+            </button>
+          </div>
+
+        </a>
+      </article>
+
+      <!--Events 3 Cantata music festival-->
+      <article class="flex flex-col bg-white article  cursor-pointer max-w-80">
+        <a href="./events/cantata.html">
+          <!--Image and Date-->
+          <div class="relative">
+            <img src="./images/cantata/c1.jpg" alt="cantata music image" class="">
+            <div class="absolute top-0 left-0 px-4 py-3.5 text-center z-20 bg-white sm:px-6 sm:py-5">
+              <p class="text-6xl font-semibold mb-2">11</p>
+              <p class="text-3xl">MAY</p>
+            </div>
+          </div>
+          <!--Brief abt the event-->
+          <div class="px-6 py-6 flex flex-col gap-4 items-start">
+            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+              CANTATA - FESTIVAL OF MUSIC
+            </h2>
+            <div class="mb-1 flex items-center gap-4">
+              <i class="fa-solid fa-location-dot fa-spin" style="color: #1447e6;"></i>
+              <p>Church Auditorium</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
+              <p>10:00 PM</p>
+            </div>
+            <!--Btn for more info-->
+            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2">
+              <a href="./events/cantata.html">
+                Learn more
+              </a>
+            </button>
+          </div>
+
+        </a>
+      </article>
+
+      <!--Events 4 Juvenile Harvest-->
+      <article class="flex flex-col bg-white article  cursor-pointer max-w-80">
+        <a href="./events/juvenile.html">
+          <!--Image and Date-->
+          <div class="relative">
+            <img src="./images/ccc-juvenile/j1.jpg" alt="juvenile harvest" class="">
+            <div class="absolute top-0 left-0 px-4 py-3.5 text-center z-20 bg-white sm:px-6 sm:py-5">
+              <p class="text-6xl font-semibold mb-2">1</p>
+              <p class="text-3xl">JUN</p>
+            </div>
+          </div>
+          <!--Brief abt the event-->
+          <div class="px-6 py-6 flex flex-col gap-4 items-start">
+            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+              JUVENILE HARVEST
+            </h2>
+            <div class="mb-1 flex items-center gap-4">
+              <i class="fa-solid fa-location-dot fa-spin" style="color: #1447e6;"></i>
+              <p>Church Auditorium</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
+              <p>10:00 PM</p>
+            </div>
+            <!--Btn for more info-->
+            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2">
               <a href="./events/juvenile.html">
                 Learn more
               </a>
@@ -77,23 +186,83 @@
         </a>
       </article>
 
-      <!--Events 2-->
+      <!--Events 5 Adult Harvest-->
+      <article class="flex flex-col bg-white article  cursor-pointer max-w-80">
+        <a href="./events/adult-harvest.html">
+          <!--Image and Date-->
+          <div class="relative">
+            <img src="./images/ccc-adult/p1.jpg" alt="adult-harvest" class="">
+            <div class="absolute top-0 left-0 px-4 py-3.5 text-center z-20 bg-white sm:px-6 sm:py-5">
+              <p class="text-6xl font-semibold mb-2">12</p>
+              <p class="text-3xl">OCT</p>
+            </div>
+          </div>
+          <!--Brief abt the event-->
+          <div class="px-6 py-6 flex flex-col gap-4 items-start">
+            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+              ADULT HARVEST
+            </h2>
+            <div class="mb-1 flex items-center gap-4">
+              <i class="fa-solid fa-location-dot fa-spin" style="color: #1447e6;"></i>
+              <p>Church Auditorium</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
+              <p>10:00 AM</p>
+            </div>
+            <!--Btn for more info-->
+            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2">
+              <a href="./events/adult-harvest.html">
+                Learn more
+              </a>
+            </button>
+          </div>
 
-      <!--Events 3-->
+        </a>
+      </article>
 
-      <!--Events 4-->
+      <!--Events 6 Christmas carol-->
+      <article class="flex flex-col bg-white article  cursor-pointer max-w-80">
+        <a href="./events/carol.html">
+          <!--Image and Date-->
+          <div class="relative">
+            <img src="./images/carol/c1.jpg" alt="carol image" class="">
+            <div class="absolute top-0 left-0 px-4 py-3.5 text-center z-20 bg-white sm:px-6 sm:py-5">
+              <p class="text-6xl font-semibold mb-2">13</p>
+              <p class="text-3xl">DEC</p>
+            </div>
+          </div>
+          <!--Brief abt the event-->
+          <div class="px-6 py-6 flex flex-col gap-4 items-start">
+            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+              CHRISTMAS CAROL
+            </h2>
+            <div class="mb-1 flex items-center gap-4">
+              <i class="fa-solid fa-location-dot fa-spin" style="color: #1447e6;"></i>
+              <p>Church Auditorium</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
+              <p>11:00 AM</p>
+            </div>
+            <!--Btn for more info-->
+            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2">
+              <a href="./events/carol.html">
+                Learn more
+              </a>
+            </button>
+          </div>
 
-      <!--Events 5-->
-
-      <!--Events 6-->
+        </a>
+      </article>
 
     </section>
 
     <!-- CTA - Get involved -->
-    <section class="mb-14">
-      <h3>
-        Join the Movement:
-      </h3>
+    <section class="mb-14 flex flex-col gap-5">
+      <h2 class="text-3xl font-semibold raleway sm:text-4xl">
+        Join the Movement
+      </h2>
       <p>
         Start your journey with us! Join our church community and take the first step towards a deeper faith, meaningful relationships, and a sense of purpose.
       </p>
@@ -105,5 +274,6 @@
   <footer>
 
   </footer>
+
 </body>
 </html>
