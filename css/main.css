@@ -23,9 +23,9 @@
   transition-duration: 100ms;
 }
 .block-animation:hover {
-  box-shadow: 10px 10px 10px rgb(56, 56, 56), -8px -8px 8px #e5e7eb;
+  box-shadow: 10px 10px 10px #8490a8 , -8px -8px 8px #e5e7eb;
+  transition-duration: .7s;
 }
-
 @keyframes typing {
   0% { width: 0; }
   50%,
@@ -35,11 +35,9 @@
   }
   100% { width: 0; }
 }
-
 @keyframes blink {
   50% { border-color: transparent; }
 }
-
 .typing-text {
   overflow: hidden;
   white-space: nowrap;
@@ -48,6 +46,19 @@
   width: 0;
   animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
 }
+
+@keyframes movingtext {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.moving-text {
+  animation-name: movingtext 1s ease-in;
+}
+
 
 
 @media (min-width: 640px) {
