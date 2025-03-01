@@ -6,6 +6,22 @@
 .raleway {
   font-family: 'Raleway';
 }
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+.block-animation {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  transition-duration: 100ms;
+}
 @media (min-width: 640px) {
   .event-grid {
     display: grid;
