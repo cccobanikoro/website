@@ -46,20 +46,52 @@
   width: 0;
   animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
 }
-
-@keyframes movingtext {
+@keyframes fadeSlide {
   from {
-    transform: translateX(-100px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-.moving-text {
-  animation-name: movingtext 1s ease-in;
+.animated-date p {
+  animation: fadeSlide 1s ease-out forwards;
 }
+/* Add delay to each part for a staggered effect */
+.animated-date p:nth-child(1) { animation-delay: 0.3s; } /* OCT */
+.animated-date p:nth-child(2) { animation-delay: 0.6s; } /* 12 */
+.animated-date p:nth-child(3) { animation-delay: 0.9s; } /* 2025 */
 
 
+/*Adult-harvest*/
+@keyframes slider {
+  0%, 4% { transform: translateX(0); }
+  5%, 9% { transform: translateX(-5%); } 
+  10%, 14% { transform: translateX(-10%); }
+  15%, 19% { transform: translateX(-15%); }
+  20%, 24% { transform: translateX(-20%); }
+  25%, 29% { transform: translateX(-25%); }
+  30%, 34% { transform: translateX(-30%); }
+  35%, 39% { transform: translateX(-35%); }
+  40%, 44% { transform: translateX(-40%); }
+  45%, 49% { transform: translateX(-45%); }
+  50%, 54% { transform: translateX(-50%); }
+  55%, 59% { transform: translateX(-55%); }
+  60%, 64% { transform: translateX(-60%); }
+  65%, 69% { transform: translateX(-65%); }
+  70%, 74% { transform: translateX(-70%); }
+  75%, 79% { transform: translateX(-75%); }
+  80%, 84% { transform: translateX(-80%); }
+  85%, 89% { transform: translateX(-85%); }
+  90%, 94% { transform: translateX(-90%); }
+  95%, 99% { transform: translateX(-95%); }
+  100% { transform: translateX(0); } 
+}
+.animate-slider {
+  animation: slider 50s steps(1, end) infinite;
+}
 
 @media (min-width: 640px) {
   .event-grid {
