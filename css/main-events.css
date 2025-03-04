@@ -47,7 +47,7 @@
   width: 0;
   animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
 }
-@keyframes slideLeft {
+@keyframes slideRight {
   from {
     transform: translateX(900px);
   }
@@ -56,7 +56,7 @@
   }
 }
 .animated-date p {
-  animation: slideLeft 2s ease-out forwards !important;
+  animation: slideRight 2s ease-out forwards !important;
 }
 .animated-date p:nth-child(1) {
   animation-delay: 0.3s;

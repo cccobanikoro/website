@@ -1,0 +1,11 @@
+@keyframes slideLeft {
+  from {
+    transform: translateX(900px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animated-date p {
+  animation: slideLeft 2s ease-out forwards !important;
+}
