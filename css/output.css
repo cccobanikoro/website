@@ -606,62 +606,119 @@
   0%, 2.5% {
     transform: translateX(0);
   }
-  5%, 7.5% {
+  5% {
     transform: translateX(-2.5%);
   }
-  10%, 12.5% {
+  7.5% {
     transform: translateX(-5%);
   }
-  15%, 17.5% {
+  10% {
     transform: translateX(-7.5%);
   }
-  20%, 22.5% {
+  12.5% {
     transform: translateX(-10%);
   }
-  25%, 27.5% {
+  15% {
     transform: translateX(-12.5%);
   }
-  30%, 32.5% {
+  17.5% {
     transform: translateX(-15%);
   }
-  35%, 37.5% {
+  20% {
     transform: translateX(-17.5%);
   }
-  40%, 42.5% {
+  22.5% {
     transform: translateX(-20%);
   }
-  45%, 47.5% {
+  25% {
     transform: translateX(-22.5%);
   }
-  50%, 52.5% {
+  27.5% {
     transform: translateX(-25%);
   }
-  55%, 57.5% {
+  30% {
     transform: translateX(-27.5%);
   }
-  60%, 62.5% {
+  32.5% {
     transform: translateX(-30%);
   }
-  65%, 67.5% {
+  35% {
     transform: translateX(-32.5%);
   }
-  70%, 72.5% {
+  37.5% {
     transform: translateX(-35%);
   }
-  75%, 77.5% {
+  40% {
     transform: translateX(-37.5%);
   }
-  80%, 82.5% {
+  42.5% {
     transform: translateX(-40%);
   }
-  85%, 87.5% {
+  45% {
     transform: translateX(-42.5%);
   }
-  90%, 92.5% {
+  47.5% {
     transform: translateX(-45%);
   }
-  95%, 97.5% {
+  50% {
     transform: translateX(-47.5%);
+  }
+  52.5% {
+    transform: translateX(-50%);
+  }
+  55% {
+    transform: translateX(-52.5%);
+  }
+  57.5% {
+    transform: translateX(-55%);
+  }
+  60% {
+    transform: translateX(-57.5%);
+  }
+  62.5% {
+    transform: translateX(-60%);
+  }
+  65% {
+    transform: translateX(-62.5%);
+  }
+  67.5% {
+    transform: translateX(-65%);
+  }
+  70% {
+    transform: translateX(-67.5%);
+  }
+  72.5% {
+    transform: translateX(-70%);
+  }
+  75% {
+    transform: translateX(-72.5%);
+  }
+  77.5% {
+    transform: translateX(-75%);
+  }
+  80% {
+    transform: translateX(-77.5%);
+  }
+  82.5% {
+    transform: translateX(-80%);
+  }
+  85% {
+    transform: translateX(-82.5%);
+  }
+  87.5% {
+    transform: translateX(-85%);
+  }
+  90% {
+    transform: translateX(-87.5%);
+  }
+  92.5% {
+    transform: translateX(-90%);
+  }
+  95% {
+    transform: translateX(-92.5%);
+  }
+  97.5% {
+    transform: translateX(-95%);
   }
   100% {
     transform: translateX(0);
