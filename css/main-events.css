@@ -46,7 +46,7 @@
   width: 0;
   animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
 }
-@keyframes slideleft {
+@keyframes slideLeft {
   from {
     transform: translateX(900px);
   }
@@ -55,7 +55,7 @@
   }
 }
 .animated-date p {
-  animation: slideleft 2s ease-out forwards !important;
+  animation: slideLeft 2s ease-out forwards !important;
 }
 .animated-date p:nth-child(1) {
   animation-delay: 0.3s;
@@ -68,52 +68,28 @@
 }
 
 /*Img slider for 40 images*/
-@keyframes imgSlider {
-  0%, 2.5% { transform: translateX(0); }
-  5% { transform: translateX(-2.5%); }
-  7.5% { transform: translateX(-5%); }
-  10% { transform: translateX(-7.5%); }
-  12.5% { transform: translateX(-10%); }
-  15% { transform: translateX(-12.5%); }
-  17.5% { transform: translateX(-15%); }
-  20% { transform: translateX(-17.5%); }
-  22.5% { transform: translateX(-20%); }
-  25% { transform: translateX(-22.5%); }
-  27.5% { transform: translateX(-25%); }
-  30% { transform: translateX(-27.5%); }
-  32.5% { transform: translateX(-30%); }
-  35% { transform: translateX(-32.5%); }
-  37.5% { transform: translateX(-35%); }
-  40% { transform: translateX(-37.5%); }
-  42.5% { transform: translateX(-40%); }
-  45% { transform: translateX(-42.5%); }
-  47.5% { transform: translateX(-45%); }
-  50% { transform: translateX(-47.5%); }
-  52.5% { transform: translateX(-50%); }
-  55% { transform: translateX(-52.5%); }
-  57.5% { transform: translateX(-55%); }
-  60% { transform: translateX(-57.5%); }
-  62.5% { transform: translateX(-60%); }
-  65% { transform: translateX(-62.5%); }
-  67.5% { transform: translateX(-65%); }
-  70% { transform: translateX(-67.5%); }
-  72.5% { transform: translateX(-70%); }
-  75% { transform: translateX(-72.5%); }
-  77.5% { transform: translateX(-75%); }
-  80% { transform: translateX(-77.5%); }
-  82.5% { transform: translateX(-80%); }
-  85% { transform: translateX(-82.5%); }
-  87.5% { transform: translateX(-85%); }
-  90% { transform: translateX(-87.5%); }
-  92.5% { transform: translateX(-90%); }
-  95% { transform: translateX(-92.5%); }
-  97.5% { transform: translateX(-95%); }
-  100% { transform: translateX(0); } /* Loops back */
-}
-.adult-slider {
-  animation: imgSlider 80s linear infinite;
+@keyframes adultSlider {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
+
+.adult-slider {
+  animation: adultSlider 80s linear infinite;
+}
 
 /*Img slider for 20 images*/
 @keyframes slider {
