@@ -91,7 +91,7 @@
   95%, 97.5% { transform: translateX(-47.5%); }
   100% { transform: translateX(0); } /* Loops back */
 }
-.animate-slider {
+.adult-slider {
   animation: imgSlider 80s linear infinite;
 }
 
