@@ -1,11 +1,14 @@
 @keyframes slideLeft {
   from {
-    transform: translateX(900px);
+    transform: translateX(-900px);
   }
   to {
     transform: translateX(0);
   }
 }
-.animated-date p {
+.animated-h1 {
   animation: slideLeft 2s ease-out forwards !important;
+}
+.video-bg-choir {
+  
 }
