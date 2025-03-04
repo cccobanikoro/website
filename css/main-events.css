@@ -67,7 +67,7 @@
   animation-delay: 0.9s;
 }
 
-/*Img slider for 40 images*/
+/*32 img carousel*/
 @keyframes adultSlider {
   0% {
     transform: translateX(0);
@@ -85,7 +85,6 @@
     transform: translateX(0);
   }
 }
-
 
 .adult-slider {
   animation: adultSlider 80s linear infinite;
