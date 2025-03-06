@@ -21,11 +21,10 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-  transition-duration: 100ms;
+  transition-duration: .7s;
 }
 .block-animation:hover {
   box-shadow: 10px 10px 10px #8490a8 , -8px -8px 8px #e5e7eb;
-  transition-duration: .7s;
 }
 @keyframes typing {
   0% { width: 0; }
