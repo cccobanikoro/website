@@ -16,4 +16,6 @@ h1{
 img{
  display:flex;
  opacity:0.7;
+ width:250%;
+ height:115%;
 }
