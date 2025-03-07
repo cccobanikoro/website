@@ -2,5 +2,7 @@
 .main-container {
   background-color:white;
   background-image: url("images/Rev.-Pastor-Founder-SBJ-Oshoffa-300x300-1.webp");
-  opacity:1.5;
+  opacity:1.0;
+  margin:10px;
+  padding:20px 20px;
 }
