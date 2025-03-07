@@ -7,9 +7,11 @@
   
 }
 h1{
- font-weight:500;
+ padding:40px 40px;
  color:Blue;
+ width:100%;
 }
+
 .section-1{
   color:Blue;
   line height:2;
