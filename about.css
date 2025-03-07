@@ -10,7 +10,7 @@ color
 }
 h1{
  font-weight:500;
- color:"blue";
+ text-decoration: none overline dotted blue;
  font-family:Monospace;
 }
 img{
