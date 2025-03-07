@@ -13,12 +13,6 @@ h1{
  text-decoration: none overline dotted blue;
  font-family:Monospace;
 }
-img{
- display:
- opacity:0.7;
- width:250%;
- height:115%;
-}
 marquee{
  text-decoration-color:blue;
  font-size:Bold;
