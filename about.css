@@ -1,4 +1,6 @@
-
+body{
+color
+}
 .main-container {
   background-color:white;
   background-image: url("images/Rev.-Pastor-Founder-SBJ-Oshoffa-300x300-1.webp");
@@ -6,12 +8,12 @@
   margin:10px;
   padding:20px 20px;
 }
-.h-l{
+h1{
  font-weight:500;
  color:"blue";
  font-family:Monospace;
 }
-.img-1{
+img{
  display:flex;
  opacity:0.7;
 }
