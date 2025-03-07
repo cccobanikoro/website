@@ -19,3 +19,7 @@ img{
  width:250%;
  height:115%;
 }
+marquee{
+ text-decoration-color:blue;
+ font-size:Bold;
+}
