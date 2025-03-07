@@ -8,10 +8,10 @@
 }
 .h-l{
  font-weight:500;
- color:"tomato";
+ color:"blue";
  font-family:Monospace;
 }
-img-1{
+.img-1{
  display:flex;
  opacity:0.7;
 }
