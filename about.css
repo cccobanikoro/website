@@ -6,3 +6,12 @@
   margin:10px;
   padding:20px 20px;
 }
+.h-l{
+ font-weight:500;
+ color:"tomato";
+ font-family:Monospace;
+}
+img-1{
+ display:flex;
+ opacity:0.7;
+}
