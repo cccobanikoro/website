@@ -1,0 +1,25 @@
+.sidebar {
+  display: flex;
+}
+.menuBtn {
+  display: none;
+}
+nav a:hover {
+  color: rgb(202, 202, 202);
+}
+@media (max-width: 880px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+}
+@media (screen) {
+  
+}
+@media (max-width: 430px) {
+  .sidebar {
+    width: 100%;
+  }
+}
