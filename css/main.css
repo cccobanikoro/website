@@ -1,5 +1,5 @@
 .sidebar {
-  display: flex;
+  display: none;
 }
 .menuBtn {
   display: none;
