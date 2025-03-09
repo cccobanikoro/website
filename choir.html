@@ -15,31 +15,27 @@
   <link rel="stylesheet" href="./css/output.css">
   <title>CCC Obanikoro</title>
 </head>
-<body class="max-w-full h-screen overflow-x-hidden">
-
-  <header>
-  </header>
+<body class="max-w-full h-screen overflow-x-hidden"></body>
 
   <!-- BG-video and Welcome Message-->
-    <section class="bg-video relative w-screen h-screen overflow-hidden">
+    <section class="flex bg-video relative w-screen h-screen overflow-hidden">
       <div>
         <video muted autoplay loop class="absolute top-0 left-0 w-full h-full object-cover opacity-90 sm:backdrop-blur-md">
           <source src="./images/choir/choir-video.mp4">
         </video>
       </div>
-      <div class="animated-h1 z-10 font-semibold flex flex-col gap-2 justify-center items-center h-screen w-screen absolute top-0 left-0 backdrop-blur-md sm:px-2">
-        <h1 class="uppercase text-center text-3xl font-bold sm:text-4xl lg:text-5xl mb-2.5 raleway">Welcome to our chorus of praise!</h1>
-        <p class="text-2xl text-center uppercase">Where music meets ministry!</p>
-        <p class="text-2xl text-center uppercase">Singing God's Praises, Touching Hearts!</p>
-        <p class="text-2xl text-center uppercase">We're thrilled to have you here!</p>
+      <div class="z-10 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute top-0 left-0 backdrop-blur-md sm:px-2">
+        <h1 class="uppercase text-center text-3xl font-bold sm:text-4xl lg:text-5xl mb-2.5 raleway animated-h1">Welcome to our awesome choir!</h1>
+        <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">Where music meets ministry!</p>
+        <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">Singing God's Praises, Touching Hearts!</p>
+        <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">We're thrilled to have you here!</p>
+        <a href="#main" class="mt-24">
+          <i class="fa-solid fa-arrow-down animate-bounce" style="color: #00000088; font-size: 40px;"></i>
+        </a>
       </div>
-
-      <p>
-        <i class="fa-solid fa-arrow-down animate-bounce" style="color: #000000;"></i>
-      </p>
     </section>    
   
-  <main class="flex flex-col gap-15 open-sans px-3 pt-10 font-medium bg-gray-200 text-black text-[19px] sm:text-[21px] sm:px-4 sm:pt-8 lg:pt-10 lg:text-[23px]">
+  <main id="main" class="flex flex-col gap-15 open-sans px-3 pt-10 font-medium bg-gray-200 text-black text-[19px] sm:text-[21px] sm:px-4 sm:pt-8 lg:pt-10 lg:text-[23px]">
     <!--Mission and history of the choir-->
     <section class="flex flex-col gap-4 sm:mx-auto sm:max-w-[90%]">
       <!--History of the choir-->
@@ -299,5 +295,6 @@
 
   </footer>
 
+  <script src="./js folder/navbar.js"></script>
 </body>
 </html>

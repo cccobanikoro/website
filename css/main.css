@@ -7,6 +7,9 @@
 nav a:hover {
   color: rgb(202, 202, 202);
 }
+.active {
+  border-bottom: 3px solid black;
+}
 @media (max-width: 880px) {
   .hideOnMobile {
     display: none;

@@ -1,17 +1,29 @@
 @keyframes slideLeft {
   from {
     transform: translateX(-900px);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 .animated-h1 {
   animation: slideLeft 2s ease-out forwards !important;
 }
+.animated-p1 {
+  animation-delay: 2s;
+}
+.animated-p2 {
+  animation-delay: 4s;
+}
+.animated-p3 {
+  animation-delay: 7s;
+}
+
 @keyframes width {
   from {
-    opacity: 0;
+    visibility: hidden;
     transform: translateX(-100px);
   }
   to {
