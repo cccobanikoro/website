@@ -34,12 +34,16 @@
 .width-animation {
   animation: width linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 10% cover 30%;
   transition-duration: .7s;
 }
 .width-animation:hover {
   box-shadow: 10px 10px 10px #8490a8 , -8px -8px 8px #e5e7eb;
 }
+.choir-grid article {
+  width: 100%;
+}
+
 @media (min-width: 689px) {
   .choir-grid {
     grid-template-columns: repeat(2, 1fr);

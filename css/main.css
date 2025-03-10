@@ -9,6 +9,7 @@ nav a:hover {
 }
 .active {
   border-bottom: 3px solid black;
+  font-weight: 700;
 }
 @media (max-width: 880px) {
   .hideOnMobile {
@@ -17,9 +18,6 @@ nav a:hover {
   .menuBtn {
     display: block;
   }
-}
-@media (screen) {
-  
 }
 @media (max-width: 430px) {
   .sidebar {

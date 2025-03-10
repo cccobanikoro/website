@@ -19,16 +19,56 @@
 
   <!-- BG-video and Welcome Message-->
     <section class="flex bg-video relative w-screen h-screen overflow-hidden">
+      <header class="raleway fixed top-0 left-0 w-full z-50 flex items-center h-[4rem] justify-between px-4 backdrop-blur-md">
+        <div>
+          <a href="./index.html" class="flex items-center">
+            <img src="./images/ccc-logo.png" alt="ccc-logo" class="w-[3.5rem] sm:w-[4rem]">
+            <p class="font-bold text-xl ml-1.5 whitespace-nowrap">C.C.C Obanikoro</p>
+          </a>
+        </div>
+    
+        <nav class="">
+          <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-white sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+              </a>
+            </li>
+            <li class="w-full"><a href="./index.html">Home</a></li>
+            <li class="w-full"><a href="./service.html">Service</a></li>
+            <li class="w-full active"><a href="./choir.html">Choir</a></li>
+            <li class="w-full"><a href="./sunday-school.html">Sunday School</a></li>
+            <li class="w-full"><a href="./events.html">Events</a></li>
+            <li class="w-full"><a href="./about.html">About</a></li>
+            <li class="w-full"><a href="./others.html">Others</a></li>
+          </ul>
+    
+          <ul class="w-full flex gap-6 items-center">
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./service.html">Service</a></li>
+            <li class="hideOnMobile active"><a href="./choir.html">Choir</a></li>
+            <li class="hideOnMobile"><a href="./sunday-school.html">Sunday School</a></li>
+            <li class="hideOnMobile"><a href="./events.html">Events</a></li>
+            <li class="hideOnMobile"><a href="./about.html">About</a></li>
+            <li class="hideOnMobile"><a href="./others.html">Others</a></li>
+            <li onclick="showSidebar()" class="menuBtn">
+              <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <div>
         <video muted autoplay loop class="absolute top-0 left-0 w-full h-full object-cover opacity-90 sm:backdrop-blur-md">
           <source src="./images/choir/choir-video.mp4">
         </video>
       </div>
-      <div class="z-10 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute top-0 left-0 backdrop-blur-md sm:px-2">
+      <div class="z-20 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute top-[4rem] left-0 sm:px-2">
         <h1 class="uppercase text-center text-3xl font-bold sm:text-4xl lg:text-5xl mb-2.5 raleway animated-h1">Welcome to our awesome choir!</h1>
         <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">Where music meets ministry!</p>
-        <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">Singing God's Praises, Touching Hearts!</p>
         <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">We're thrilled to have you here!</p>
+        <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">C.C.C Obanikoro choir</p>
         <a href="#main" class="mt-24">
           <i class="fa-solid fa-arrow-down animate-bounce" style="color: #00000088; font-size: 40px;"></i>
         </a>
@@ -79,7 +119,7 @@
       <!--Leaders-->
       <div class="grid gap-3 my-3 items-stretch choir-grid">
         <!--EXCO 1-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/cm.jpg" alt="" class="h-[140px]">
 
           <div class="mx-3">
@@ -89,7 +129,7 @@
         </article>
 
         <!--EXCO 2-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/acm.jpg" alt="" class="h-[140px]">
 
           <div class="mx-3">
@@ -99,7 +139,7 @@
         </article>
 
         <!--EXCO 3-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/sec.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -109,7 +149,7 @@
         </article>
 
         <!--EXCO 4-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/asst-sec.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -119,7 +159,7 @@
         </article>
 
         <!--EXCO 5-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/fin-sec.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -129,7 +169,7 @@
         </article>
 
         <!--EXCO 6-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/treasurer.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -139,7 +179,7 @@
         </article>
 
         <!--EXCO 7-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/pro1.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -149,7 +189,7 @@
         </article>
 
         <!--EXCO 8-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/pro2.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -159,7 +199,7 @@
         </article>
 
         <!--EXCO 9-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/welfare.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -169,7 +209,7 @@
         </article>
 
         <!--EXCO 10-->
-        <article class="flex mx-auto bg-white items-center width-animation">
+        <article class="flex mx-auto bg-white items-center width-animation max-w-[400px]">
           <img src="./images/choir/chief-whip.jpg" alt="" class="h-[140px]">
   
           <div class="mx-3">
@@ -187,7 +227,7 @@
         Tune-Up tuesday
       </h2>
       <p class="text-justify">
-        Our choir rehearsals take place every Tuesday. We meet weekly to practice and perfect our harmonies.
+        Our choir rehearsals take place every Tuesday. We meet weekly to practice and perfect our harmonies. Every voice matters! Join us at rehearsal and let's create beautiful music together.
       </p>
     </section>
 
@@ -235,7 +275,7 @@
         <a href="./events/cantata.html">
           <!--Image and Date-->
           <div class="relative">
-            <video src="./images/choir/cantata.mp4" autoplay loop muted></video>
+            <img src="./images/cantata/c3.jpg" alt="">
             <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-gray-50 md:px-6 md:py-5 backdrop-blur-md">
               <p class="text-4xl font-semibold mb-2">11</p>
               <p class="text-xl">MAY</p>
@@ -272,7 +312,7 @@
         Heavenly Harmonies
       </h2>
       <p> 
-        Listen to Inspirational Music by CCC Obanikoro Choir.
+        Get ready to experience the power of music! Listen to Obanikoro Choir's uplifting songs and let the joy resonate within you. Stream now and let their harmonies uplift you!
       </p>
       <article class="flex flex-col gap-5 bg-white mx-auto max-w-80 sm:grid sm:grid-cols-2 sm:max-w-[100rem] sm:items-stretch md:max-w-160 width-animation">
         <img src="./images/cantata/c1.jpg" alt="">
