@@ -14,7 +14,7 @@
   <title>CCC Obanikoro</title>
 </head>
 
-<body class="open-sans font-medium h-screen">
+<body class="open-sans font-medium h-screen overflow-x-hidden text-black">
     <!--Header, bg-video and Welcome message-->
     <section class="flex bg-video relative w-screen h-screen overflow-hidden">
       <header class="raleway fixed top-0 left-0 w-full z-50 flex items-center h-[4rem] justify-between px-4 backdrop-blur-md">
@@ -47,6 +47,7 @@
             <li class="hideOnMobile"><a class="active" href="./sunday-school.html">Sunday School</a></li>
             <li class="hideOnMobile"><a href="./events.html">Events</a></li>
             <li class="hideOnMobile"><a href="./about.html">About</a></li>
+            
             <li onclick="showSidebar()" class="menuBtn">
               <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
@@ -58,22 +59,24 @@
 
       <!--Bg video-->
       <div>
-        <img src="./images/sunday-sch/s11.jpg" alt="" class="sm:hidden">
-        <video muted autoplay loop class="hidden absolute top-0 left-0 w-full h-full object-cover opacity-90 sm:block sm:backdrop-blur-md">
+        <video muted autoplay loop class=" absolute top-0 left-0 w-full h-full object-cover  opacity-90 sm:backdrop-blur-md">
           <source src="./images/sunday-sch/video1.mp4">
-        </video>
+        </video> 
       </div>
 
       <!--Welcome text-->
-      <div class="z-20 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute top-[4rem] left-0 sm:px-2">
-
+      <div class="z-20 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute left-0 sm:px-2">
+        <h1 class="font-bold text-2xl uppercase text-center">
+          Welcome to c.c.c obanikoro Sunday school, where we come together to learn and grow in God's word.
+        </h1>
       </div>
     </section>
 
-  <main class="relative top-[4rem]">
+  <main class="relative">
 
     <!--Mission and what the Sunday sch is abt-->
-    <section></section>
+    <section>
+    </section>
 
     <!--Abt Sunday sch n Teachers-->
     <section></section>
