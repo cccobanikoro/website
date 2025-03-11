@@ -11,6 +11,7 @@
 }
 nav a:hover {
   color: rgb(202, 202, 202);
+  border: none;
 }
 .active {
   border-bottom: 3px solid black;
