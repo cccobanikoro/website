@@ -1,7 +1,3 @@
-@import url(./choir.css);
-@import url(./main.css);
-@import "tailwindcss";
-
 .open-sans {
   font-family: 'Open sans';
 }

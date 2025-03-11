@@ -17,7 +17,7 @@
 </head>
 <body class="max-w-full h-screen overflow-x-hidden"></body>
 
-  <!-- BG-video and Welcome Message-->
+  <!--Header, bg-video and Welcome message-->
     <section class="flex bg-video relative w-screen h-screen overflow-hidden">
       <header class="raleway fixed top-0 left-0 w-full z-50 flex items-center h-[4rem] justify-between px-4 backdrop-blur-md">
         <div>
@@ -28,7 +28,7 @@
         </div>
     
         <nav class="">
-          <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-white sidebar">
+          <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-gray-100 backdrop-blur-md sidebar">
             <li onclick="hideSidebar()">
               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
               </a>
@@ -64,12 +64,12 @@
           <source src="./images/choir/choir-video.mp4">
         </video>
       </div>
-      <div class="z-20 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute top-[4rem] left-0 sm:px-2">
+      <div class="z-20 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute top-[4rem] left-0 sm:px-2 backdrop-blur-md">
         <h1 class="uppercase text-center text-3xl font-bold sm:text-4xl lg:text-5xl mb-2.5 raleway animated-h1">Welcome to our awesome choir!</h1>
         <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">Where music meets ministry!</p>
         <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">We're thrilled to have you here!</p>
         <p class="text-2xl text-center uppercase sm:text-3xl animated-h1">C.C.C Obanikoro choir</p>
-        <a href="#main" class="mt-24">
+        <a href="#main" class="mt-10 sm:mt-18 lg:mt-24">
           <i class="fa-solid fa-arrow-down animate-bounce" style="color: #00000088; font-size: 40px;"></i>
         </a>
       </div>
@@ -329,6 +329,25 @@
         </div>
       </article>
     </section>
+
+    <!--Link to Choir Gallery-->
+    <section class="sm:mx-auto sm:max-w-[90%] flex flex-col gap-5 items-start pb-10">
+      <h2 class="raleway text-3xl font-bold uppercase sm:4xl">
+        Our Story in Pictures!
+      </h2>
+      <p>
+        Where memories meet moments.
+        Our gallery showcases a collection of photos highlighting our events, activities, and achievements.
+        Ready to explore? Head to the gallery now!
+      </p>
+      <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2 hover:bg-blue-100">
+        <a href="./gallery/choir-gallery.html">
+          Explore the moment!
+        </a>
+      </button>
+
+    </section>
+
   </main>
 
   <footer>
