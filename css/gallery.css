@@ -1,3 +1,43 @@
 .main-gallery {
-  background: #b9b9b9;
+  background: hsl(0, 0%, 86%);
 }
+.img-gallery {
+  width: 80%;
+  margin: 100px auto 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+}
+.img-gallery img:hover {
+  transform: scale(0.8);
+  border-radius: 20px;
+}
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background:hsla(0, 0%, 0%, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img img {
+  width: 90%;
+  max-width: 500px;
+}
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
