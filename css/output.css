@@ -613,6 +613,11 @@
       margin-top: calc(var(--spacing) * 1);
     }
   }
+  .sm\:mt-7 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 7);
+    }
+  }
   .sm\:mt-18 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 18);
@@ -673,6 +678,11 @@
       flex-direction: row;
     }
   }
+  .sm\:items-start {
+    @media (width >= 40rem) {
+      align-items: flex-start;
+    }
+  }
   .sm\:items-stretch {
     @media (width >= 40rem) {
       align-items: stretch;
@@ -686,6 +696,11 @@
   .sm\:gap-2 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 2);
+    }
+  }
+  .sm\:gap-4 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .sm\:border-b-\[5px\] {
