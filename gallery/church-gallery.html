@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../images/ccc-logo.png" type="image/x-icon">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--Font Awesome for icons-->
+  <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../css/output.css">
+  <title>CCC Obanikoro</title>
+</head>
+<body class="max-w-full h-screen overflow-x-hidden">
+
+  <!--Header, bg-video and Welcome message-->
+  <section class="flex bg-video relative w-screen overflow-hidden">
+    <header class="raleway fixed top-0 left-0 w-full z-10 flex items-center h-[4rem] justify-between px-4 backdrop-blur-sm">
+      <div>
+        <a href="../index.html" class="flex items-center">
+          <img src="../images/ccc-logo.png" alt="ccc-logo" class="w-[3.5rem] sm:w-[4rem]">
+          <p class="font-bold text-xl ml-1.5 whitespace-nowrap">C.C.C Obanikoro</p>
+        </a>
+      </div>
+  
+      <nav class="">
+        <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-gray-50 sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+            </a>
+          </li>
+          <li class="w-full"><a href="../index.html">Home</a></li>
+          <li class="w-full"><a href="../service.html">Service</a></li>
+          <li class="w-full"><a class="active" href="../choir.html">Choir</a></li>
+          <li class="w-full"><a href="../sunday-school.html">Sunday School</a></li>
+          <li class="w-full"><a href="../events.html" class="">Events</a></li>
+          <li class="w-full"><a href="../about.html">About</a></li>
+          <li class="w-full"><a href="../gallery/church-gallery.html">Gallery</a></li>
+        </ul>
+  
+        <ul class="w-full flex gap-6 items-center lg:gap-8">
+          <li class="hideOnMobile"><a href="../index.html" class="">Home</a></li>
+          <li class="hideOnMobile"><a href="../service.html">Service</a></li>
+          <li class="hideOnMobile"><a class="active" href="../choir.html">Choir</a></li>
+          <li class="hideOnMobile"><a href="../sunday-school.html">Sunday School</a></li>
+          <li class="hideOnMobile"><a href="./events.html">Events</a></li>
+          <li class="hideOnMobile"><a href="../about.html">About</a></li>
+          <li class="hideOnMobile"><a href="../gallery/church-gallery.html">Gallery</a></li>
+          <li onclick="showSidebar()" class="menuBtn">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  
+  <main class="main-gallery">
+
+    <div class="full-img" id="fullImgBox">
+      <img src="../images/choir/c1.jpg" id="fullImg">
+      <span onclick="closeFullImg()" class="">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img src="../images/choir/c1.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c2.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c3.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c4.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c5.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c6.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c7.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c8.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c9.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c10.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c11.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c12.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c13.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c14.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c15.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c16.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c17.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c18.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c19.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c20.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c21.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c22.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c23.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c24.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c25.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c26.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c27.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c28.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c29.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c30.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c31.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c32.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c33.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c34.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c35.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c36.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c37.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c38.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c39.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c40.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c41.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c42.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c43.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c44.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c45.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c46.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c47.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c48.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c49.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c50.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c51.jpg" onclick="openFullImg(this.src)">
+      <img src="../images/choir/c52.jpg" onclick="openFullImg(this.src)">
+
+    </div>
+
+  </main>
+
+  <footer>
+  </footer>
+  
+  <script src="../js folder/navbar.js"></script>
+  <script src="../js folder/gallery.js"></script>
+</body>
+</html> 
