@@ -232,6 +232,9 @@
   .z-50 {
     z-index: 50;
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
   }
@@ -288,6 +291,9 @@
   }
   .grid {
     display: grid;
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
   }
   .h-\[4rem\] {
     height: 4rem;

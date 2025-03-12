@@ -12,7 +12,7 @@
   <!--Font Awesome for icons-->
   <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="../css/output.css">
   <title>CCC Obanikoro</title>
 </head>
 <body class="max-w-full h-screen overflow-x-hidden"></body>
@@ -60,11 +60,18 @@
     </header>
   </section>
   
-  <main>
+  <main class="main-gallery">
 
+    <div class="full-img" id="fullImgBox">
+      <img src="" id="fullImg">
+      <span onclick="closeFullImg()" class="">X</span>
+    </div>
 
+    <div class="img-gallery">
+      <img src="../images/choir/c1.jpg" onclick="openFullImg(this.src)">
 
-    
+    </div>
+
   </main>
 
   <footer>
