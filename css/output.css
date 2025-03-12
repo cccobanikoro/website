@@ -923,6 +923,11 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .lg\:text-\[21px\] {
+    @media (width >= 64rem) {
+      font-size: 21px;
+    }
+  }
   .lg\:text-\[23px\] {
     @media (width >= 64rem) {
       font-size: 23px;
