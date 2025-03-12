@@ -1,6 +1,7 @@
 @import url(./main-events.css);
 @import url(./sunday-school.css);
 @import url(./choir.css);
+@import url(./gallery.css);
 @import "tailwindcss";
 
 .sidebar {
