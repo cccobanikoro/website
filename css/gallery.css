@@ -16,7 +16,7 @@
 }
 .img-gallery img:hover {
   transform: scale(0.9);
-  transition: transform .7s;
+  transition: transform .5s;
   border-radius: 10px;
 }
 .full-img {
