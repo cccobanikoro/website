@@ -899,11 +899,6 @@
       gap: calc(var(--spacing) * 8);
     }
   }
-  .lg\:pt-1 {
-    @media (width >= 64rem) {
-      padding-top: calc(var(--spacing) * 1);
-    }
-  }
   .lg\:pt-10 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 10);
@@ -912,11 +907,6 @@
   .lg\:pt-12 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 12);
-    }
-  }
-  .lg\:pt-14 {
-    @media (width >= 64rem) {
-      padding-top: calc(var(--spacing) * 14);
     }
   }
   .lg\:text-4xl {
