@@ -2,8 +2,8 @@
 @import url(./sunday-school.css);
 @import url(./choir.css);
 @import url(./gallery.css);
+@import url(./service.css);
 @import "tailwindcss";
-
 
 .sidebar {
   position: fixed;
@@ -23,7 +23,6 @@
   opacity: 1;
   visibility: visible;
 }
-
 .menuBtn {
   display: none;
 }
