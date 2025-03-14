@@ -4,9 +4,26 @@
 @import url(./gallery.css);
 @import "tailwindcss";
 
+
 .sidebar {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 270px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+.sidebar li {
+  padding: 1em 0;
+}
+.sidebar.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .menuBtn {
   display: none;
 }

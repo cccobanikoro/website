@@ -4,6 +4,13 @@
 .raleway {
   font-family: 'Raleway';
 }
+.event-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+}
 @keyframes appear {
   from {
     opacity: 0;
