@@ -20,7 +20,6 @@
 .animated-p3 {
   animation-delay: 7s;
 }
-
 @keyframes width {
   from {
     visibility: hidden;
@@ -43,7 +42,6 @@
 .choir-grid article {
   width: 100%;
 }
-
 @media (min-width: 689px) {
   .choir-grid {
     grid-template-columns: repeat(2, 1fr);
