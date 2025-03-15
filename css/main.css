@@ -3,6 +3,7 @@
 @import url(./choir.css);
 @import url(./gallery.css);
 @import url(./service.css);
+@import url(./about.css);
 @import "tailwindcss";
 
 .sidebar {
