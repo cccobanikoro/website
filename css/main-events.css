@@ -1,12 +1,15 @@
-@import url(./choir.css);
-@import url(./main.css);
-@import "tailwindcss";
-
 .open-sans {
   font-family: 'Open sans';
 }
 .raleway {
   font-family: 'Raleway';
+}
+.event-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
 }
 @keyframes appear {
   from {

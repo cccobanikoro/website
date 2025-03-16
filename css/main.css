@@ -1,14 +1,39 @@
+@import url(./main-events.css);
+@import url(./sunday-school.css);
+@import url(./choir.css);
+@import url(./gallery.css);
+@import url(./contact.css);
+@import url(./about.css);
+@import "tailwindcss";
+
 .sidebar {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 270px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.sidebar li {
+  padding: 1em 0;
+}
+.sidebar.show {
+  opacity: 1;
+  visibility: visible;
 }
 .menuBtn {
   display: none;
 }
 nav a:hover {
   color: rgb(202, 202, 202);
+  border: none;
 }
 .active {
   border-bottom: 3px solid black;
+  font-weight: 700;
 }
 @media (max-width: 880px) {
   .hideOnMobile {
@@ -17,9 +42,6 @@ nav a:hover {
   .menuBtn {
     display: block;
   }
-}
-@media (screen) {
-  
 }
 @media (max-width: 430px) {
   .sidebar {
