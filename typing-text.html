@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/ccc-logo.png" type="image/x-icon">
+  <title>Typing Text</title>
+  <link rel="stylesheet" href="typing-text.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <span class="text first-text">A PLACE OF</span>
+    <span class="text sec-text">WORSHIP</span>
+    <!--Worship, Community and Service-->
+  </div>
+
+  <script>
+
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "WORSHIP";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "COMMUNITY";
+      }, 4000);
+      setTimeout(() => {
+        text.textContent = "SERVICE";
+      }, 8000);
+    }
+    textLoad();
+    setInterval(textLoad, 12000);
+
+  </script>
+
+</body>
+</html>
