@@ -1,0 +1,21 @@
+.h1-1{
+margin-top: 100px;
+text-align:center;
+color:blue;
+  
+}
+.section-1{
+    background-color:aqua;
+    padding: 10px 40px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section-2{
+  display:flex;
+  justify-content: space-between;
+}
+img{
+  width:45%;
+  height:100%;
+}
+aside{
+display:grid;
