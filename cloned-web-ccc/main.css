@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+body {
+  color: hsl(0, 0%, 0%);
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 0 3vw;
+}
+.header.scrolled {
+  backdrop-filter: blur(10px);
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  pointer-events: none;
+}
+.logo img {
+  width: clamp(40px, 10vw, 60px);
+}
+.logo p {
+  color: hsl(0, 0%, 0%);
+  font-weight: 600;
+  font-size: clamp(1rem, 1.25vw, 1.3rem);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  color: black;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+nav a:hover {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+nav a.active {
+  font-weight: 800;
+  border-bottom: 3px solid black;
+}
+#sidebar-active {
+  display: none;
+}
+.open-sidebar-btn, .close-sidebar-btn {
+  display: none;
+  padding: 0 20px;
+}
+svg.close-sidebar-btn {
+  fill: white;
+}
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+#text {
+  position: absolute;
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100dvh;
+}
+.sec {
+  position: relative;
+  background: rgb(221, 221, 221);
+}
+
+@media (max-width: 900px) {
+  .link-container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 300px;
+    background-color: black;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  }
+  nav a {
+    color: white;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  .open-sidebar-btn, .close-sidebar-btn {
+    display: block;
+    padding: 20px;
+  }
+  #sidebar-active:checked ~ .link-container {
+    display: flex;
+  }
+}
+
+
+
+
+
+/*
+html {
+  height: 100dvh;
+  overflow: hidden; 
+}
+body {
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  height: 100%;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+}
+header, header::before {
+  background: 50% 50% / cover;
+}
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  background-image: url(../images/altar.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+header * {
+  font-weight: normal;
+  margin: 0;
+  padding: 1em 0;
+  letter-spacing: 0.2em;
+  text-align: center;
+} */
+/* 
+  .home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .6rem;
+}
+
+.home-header.scrolled {
+  backdrop-filter: blur(10px);
+}
+
+.home-header.scrolled nav ul li a {
+  color: #000;
+}
+.home-bg-img {
+  min-height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  perspective: 1px;
+  perspective-origin: center;
+}
+.home-bg-img .parallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transform: translateZ(-1px) scale(2);
+  transition: transform 1s ease-out;
+}
+.home-bg-img:hover .parallax-img {
+  transform: translateZ(0px) scale(1);
+}
+
+*/
