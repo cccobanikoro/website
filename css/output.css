@@ -4,7 +4,7 @@
 @import url(./choir.css);
 @import url(./gallery.css);
 @import url(./contact.css);
-@import url(./About.css);
+@import url(./about.css);
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
