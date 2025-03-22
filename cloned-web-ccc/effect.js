@@ -1,5 +1,6 @@
 let img = document.getElementById('img-altar');
 let text = document.getElementById('text');
+const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
@@ -9,10 +10,14 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', function() {
-  const header = document.querySelector('.header');
   if (window.scrollY > 0) {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
   }
 });
+
+
+
+
+
