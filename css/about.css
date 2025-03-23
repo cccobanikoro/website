@@ -1,1 +1,28 @@
-
+.section-1{
+    margin-top: 100px;
+border: 15px solid skyblue;
+margin-bottom: 40px;
+}
+.h1-1{
+    text-align: center;
+    color: dodgerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.rev{
+    width: 90%;
+    height: 100%;
+}
+p-1{
+    margin-top: 10px;
+}
+.section-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aside-1{
+    display: grid;
+}
+.aside-2{
+    display: grid;
+    row-gap: 1%;
+}

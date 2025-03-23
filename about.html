@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCC Obanikoro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Favicon-->
   <link rel="shortcut icon" href="../images/ccc-logo.png" type="image/x-icon">
   <!--Fonts-->
@@ -12,40 +11,101 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!--Font Awesome for icons-->
   <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/about.css">
+   <link rel="stylesheet" href="./css/output.css">
+   <link rel="stylesheet" href="./css/about.css">
+  <title>CCC Obanikoro</title>
 </head>
 <body>
-    <header>
+  <header class="raleway fixed top-0 left-0 w-full z-10 flex items-center h-[4rem] justify-between px-4 backdrop-blur-sm">
+    <div>
+      <a href="./index.html" class="flex items-center">
+        <img src="./images/ccc-logo.png" alt="ccc-logo" class="w-[3.5rem] sm:w-[4rem]">
+        <p class="font-bold text-xl ml-1.5 whitespace-nowrap">C.C.C Obanikoro</p>
+      </a>
+    </div>
 
-    </header>
+    <nav class="">
+      <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-white sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+          </a>
+        </li>
+        <li class="w-full"><a href="./index.html">Home</a></li>
+        <li class="w-full"><a href="./service.html">Service</a></li>
+        <li class="w-full"><a href="./choir.html">Choir</a></li>
+        <li class="w-full"><a href="./sunday-school.html">Sunday School</a></li>
+        <li class="w-full"><a href="./events.html">Events</a></li>
+        <li class="w-full"><a class="active" href="./about.html">About</a></li>
+        <li class="w-full"><a href="./gallery/church-gallery.html">Gallery</a></li>
+      </ul>
+
+      <ul class="w-full flex gap-6 items-center">
+        <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="./service.html">Service</a></li>
+        <li class="hideOnMobile"><a href="./choir.html">Choir</a></li>
+        <li class="hideOnMobile"><a href="./sunday-school.html">Sunday School</a></li>
+        <li class="hideOnMobile"><a href="./events.html">Events</a></li>
+        <li class="hideOnMobile"><a class="active" href="./about.html">About</a></li>
+        <li class="hideOnMobile"><a href="./gallery/church-gallery.html">Gallery</a></li>
+        <li onclick="showSidebar()" class="menuBtn">
+          <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header> 
     <main>
-        <section>
-         <h3> Dear brothers and sisters in christ, we welcome you to Celestisl Church of Christ Obanikoro Parish.</h3> 
-         <p>
+        <section class="section-1" >
+          <h1 class="h1-1"> Dear brothers and sisters in christ, we welcome you to Celestial Church of Christ Obanikoro Parish.</h1>
+         <p class="p-1">
           We are a community of belivers dedicated to spreading the love and word of God. Our church is a place of worship,healing,and spiritual growth.
           We invite you to join us in our services and experience the power of Gods love.
          </p>
         </section>
-        
-        <section>
-            <h5>Rev. S.M OLUWO</h5>
-         <img src="images/revsm-pic/3.jpg">
-          <p>
-              <q>Meet Our Shepherd</q>
-The C.C.C Obanikoro Cathedral Church is blessed to have a dedicated and passionate shepherd in Rev. S.M OLUWO. With a heart for God and a love for His people, our shepherd provides spiritual guidance, support, and leadership to our congregation.
-                About Our Shepherd
-Rev. S.M OLUWO is a devoted servant of God with many years of experience in ministry. He is known for his inspiring sermons, compassionate counseling, and tireless commitment to spreading the Gospel.
-               Vision and Mission
-Under the leadership of our shepherd, we strive to create a welcoming and inclusive community where people from all walks of life can come together to worship, learn, and grow in their faith.    
-          </p>
+        <section class="section-2">
+          <aside class="aside-1">
+            <img src="images/revsm-pic/3.jpg" class="rev">
+           <i><h5>Rev. S.M OLUWO</h5></i>
+          </aside>
+          <aside class="aside-2">
+            <i>Meet Our Shepard</i>
+            <p>C.C.C Obanikoro Cathedral Church is blessed to have a dedicated and passionate shepherd in Rev. S.M OLUWO. With a heart for God and a love for His people, our shepherd provides spiritual guidance, support, and leadership to our congregation.</p>     
+              <i>About Our Shepherd</i>
+             <p> Rev. S.M OLUWO is a devoted servant of God with many years of experience in ministry. He is known for his inspiring sermons, compassionate counseling, and tireless commitment to spreading the Gospel.
+            </p>        
+              <i>Vision and Mission</i>
+             <p>  Under the leadership of our shepherd, we strive to create a welcoming and inclusive community where people from all walks of life can come together to worship, learn, and grow in their faith.</p>
+          </aside>   
         </section>
-        <section>
-          
+        <section class="sectionn-3">
+   The Celestial Church of Christ (CCC) is a Christian denomination founded by Samuel Bilehou Joseph Oshoffa in 1947. 
+  Here are some of the key doctrines and rules of the CCC:
+
+Doctrines:
+1. *Trinity*: The CCC believes in the Holy Trinity - God the Father, God the Son (Jesus Christ), and God the Holy Spirit.
+2. *Bible*: The CCC believes the Bible is the inspired Word of God and the ultimate authority for Christian faith and practice.
+3. *Salvation*: The CCC believes salvation comes through faith in Jesus Christ and repentance from sin.
+4. *Holy Spirit*: The CCC believes in the baptism of the Holy Spirit and the gifts of the Spirit, including speaking in tongues and healing.
+
+Rules:
+1. *Dress Code*: CCC members are expected to dress modestly 
+2. *Fasting*: CCC members are encouraged to fast regularly, especially on Wednesdays and Fridays.
+3. *Prayer*: CCC members are expected to pray regularly, especially during designated prayer times.
+4. *Tithing*: CCC members are expected to tithe (give 10% of their income) to support the church and its ministries.
+5. *Moral Conduct*: CCC members are expected to live a morally upright life, avoiding sin and worldly vices.
+6. *Respect for Authority*: CCC members are expected to respect and obey church authority, including pastors and other leaders
         </section>
     </main>
     <footer>
      Get in touch with us:
-     <a href""></a>
+      <nav>
+        <a href""></a>
+        <a href""></a>
+        <a href""></a>
+        <a href""></a>
+      </nav>
     </footer>
+  <script src="./js folder/navbar.js"></script>
 </body>
 </html>
