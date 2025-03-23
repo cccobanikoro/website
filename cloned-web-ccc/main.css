@@ -12,6 +12,7 @@
   font-family: 'Open sans', verdana;
 }
 body {
+  background-color: #FAF9F6;
   color: hsl(0, 0%, 0%);
   min-height: 100dvh;
   overflow-x: hidden;
@@ -106,6 +107,43 @@ nav svg {
 .sec {
   position: relative;
   background: rgb(221, 221, 221);
+}
+.header-white-bg {
+  background-color: #FAF9F6;
+}
+
+/*Text Animation*/
+.textContainer {
+  overflow-x: hidden;
+}
+.textContainer .typing-text {
+  position: relative;
+  text-wrap: nowrap;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(40, 56, 202);
+}
+.typing-text.first-text {
+  color: rgb(1, 4, 31);
+}
+.typing-text.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 3px solid rgb(40, 56, 202);
+  animation: animateMultipleText 4s steps(12) infinite;
+  background-color: #FAF9F6;
+}
+@keyframes animateMultipleText {
+  40%, 60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 @media (max-width: 900px) {
