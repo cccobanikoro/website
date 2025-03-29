@@ -89,9 +89,14 @@ nav svg {
   justify-content: center;
   align-items: center;
   height: 100dvh;
+  z-index: -20;
 }
 #text {
   position: absolute;
+}
+.main-container {
+  background-color: #fff;
+  z-index: 2000v ;
 }
 .parallax img {
   position: absolute;
@@ -106,10 +111,14 @@ nav svg {
 }
 .sec {
   position: relative;
-  background: rgb(221, 221, 221);
+  background: rgb(255, 255, 255);
 }
 .header-white-bg {
   background-color: #FAF9F6;
+}
+.parallax h1 {
+  color: rgb(0, 0, 0);
+  font-size: clamp;
 }
 
 /*Text Animation*/
