@@ -118,10 +118,10 @@ nav svg {
   font-weight: 700;
   color: rgb(40, 56, 202);
 }
-.typing-text.first-text {
+.textContainer .typing-text.first-text {
   color: rgb(1, 4, 31);
 }
-.typing-text.sec-text::before {
+.textContainer .typing-text.sec-text::before {
   content: "";
   position: absolute;
   top: 0;
