@@ -22,7 +22,7 @@
   transition-duration: .7s;
 }
 .block-animation:hover {
-  box-shadow: 10px 10px 10px #8490a8 , -8px -8px 8px #e5e7eb;
+  box-shadow: 10px 10px 10px , -8px -8px 8px ;
 }
 @keyframes typing {
   0% { width: 0; }
@@ -40,7 +40,7 @@
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
-  border-right: 3px solid black;
+  border-right: 3px solid ;
   width: 0;
   animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
 }

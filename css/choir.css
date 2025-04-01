@@ -37,7 +37,7 @@
   transition-duration: .7s;
 }
 .width-animation:hover {
-  box-shadow: 10px 10px 10px #8490a8 , -8px -8px 8px #e5e7eb;
+  box-shadow: 10px 10px 10px , -8px -8px 8px ;
 }
 .choir-grid article {
   width: 100%;

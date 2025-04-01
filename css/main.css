@@ -9,6 +9,7 @@
 
 body {
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
@@ -44,9 +45,6 @@ p {
   line-height: 1.5;
   word-spacing: 1px;
 }
-.index-body {
-  overflow-x: hidden;
-}
 .header {
   position: fixed;
   top: 0;
@@ -59,7 +57,7 @@ p {
   padding: 0 3vw;
 }
 .header.scrolled {
-  background-color: rgb(255, 255, 255);
+  background-color: ;
 }
 .logo a {
   display: flex;
@@ -71,7 +69,7 @@ p {
   width: clamp(40px, 10vw, 60px);
 }
 .logo p {
-  color: hsl(0, 0%, 0%);
+  color: ;
   font-weight: 600;
   font-size: clamp(1rem, 1.25vw, 1.3rem);
 }
@@ -91,14 +89,12 @@ nav {
 nav a {
   height: 100%;
   padding: 0 20px;
-  color: rgb(24, 24, 24);
-  font-weight: 600;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 nav a:hover {
-  color: hsla(0, 0%, 0%, 0.5);
+  color: ;
 }
 nav a.active {
   font-weight: 800;
@@ -136,10 +132,10 @@ nav svg {
 }
 .sec {
   position: relative;
-  background: rgb(221, 221, 221);
+  background: ;
 }
 .header-white-bg {
-  background-color: #FAF9F6;
+  background-color: ;
 }
 
 /*Text Animation*/
@@ -151,10 +147,10 @@ nav svg {
   text-wrap: nowrap;
   font-size: 2rem;
   font-weight: 700;
-  color: rgb(40, 56, 202);
+  color: ;
 }
 .textContainer .typing-text.first-text {
-  color: rgb(1, 4, 31);
+  color: ;
 }
 .textContainer .typing-text.sec-text::before {
   content: "";
@@ -186,11 +182,11 @@ nav svg {
     right: 0;
     z-index: 100;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    background-color: ;
+    box-shadow: -5px 0 5px ;
   }
   nav a {
-    color: rgb(0, 0, 0);
+    color: ;
     box-sizing: border-box;
     height: auto;
     width: 100%;

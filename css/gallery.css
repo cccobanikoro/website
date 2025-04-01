@@ -1,6 +1,3 @@
-.main-gallery {
-  background: hsl(0, 0%, 86%);
-}
 .img-gallery {
   width: 80%;
   margin: 0 auto 5px;
@@ -31,7 +28,6 @@
 .full-img {
   width: 100%;
   height: 100vh;
-  background:hsla(0, 0%, 0%, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +45,6 @@
   top: 5%;
   right: 5%;
   font-size: 30px;
-  color: black;
   cursor: pointer;
 }
 
