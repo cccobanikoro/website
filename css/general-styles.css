@@ -1,0 +1,55 @@
+:root {
+  --off-white: #FAFAFA; /* Off-white for body-bg*/
+  --text-color: #1A1A1A; /*Soft-black color */
+  --primary-color: #1447E6; /* Blue color */
+  --secondary-color: #F1C40F; /*Soft Gold color */
+  --accent-color: #D3D3D3; /*Light gray color */
+  --text-size: 17px;
+}
+body {
+  background-color: var(--off-white);
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: var(--secondary-color);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+h2 {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+  word-spacing: 3px;
+}
+h3, h4, h5 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+  word-spacing: 2px;
+}
+p {
+  font-size: var(--text-size);
+  font-weight: 500;
+  letter-spacing: -.5px;
+  line-height: 1.4;
+  word-spacing: 1px;
+}
+/* For Buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--off-white);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
