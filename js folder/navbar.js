@@ -8,7 +8,6 @@ function hideSidebar() {
   sidebar.classList.remove('show');
 }
 
-
 /*
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
