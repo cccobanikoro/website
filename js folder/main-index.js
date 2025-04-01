@@ -2,6 +2,7 @@ let img = document.getElementById('img-altar');
 let text = document.getElementById('text');
 const header = document.querySelector('.header');
 
+// PARALLAX FOR INDEX 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
 
