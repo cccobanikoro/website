@@ -13,6 +13,9 @@
 .header.scrolled {
   background-color: ;
 }
+.header-white-bg {
+  background-color: ;
+}
 .logo a {
   display: flex;
   align-items: center;

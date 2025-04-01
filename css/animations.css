@@ -119,6 +119,15 @@
   animation: adultSlider 80s linear infinite;
 }
 
+@keyframes animateMultipleText {
+  40%, 60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 /*Img slider for 20 images*/
 @keyframes slider {
   0%, 4% { transform: translateX(0); }

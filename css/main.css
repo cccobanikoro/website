@@ -74,9 +74,7 @@ p {
   position: relative;
   background: ;
 }
-.header-white-bg {
-  background-color: ;
-}
+
 
 /*Text Animation*/
 .textContainer {
@@ -103,13 +101,6 @@ p {
   animation: animateMultipleText 4s steps(12) infinite;
   background-color: ;
 }
-@keyframes animateMultipleText {
-  40%, 60% {
-    left: calc(100% + 4px);
-  }
-  100% {
-    left: 0%;
-  }
-}
+
 
 
