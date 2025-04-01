@@ -17,69 +17,31 @@
 <body class="open-sans font-medium h-screen overflow-x-hidden text-black">
     <!--Header, bg-video and Welcome message-->
     <section class="flex bg-video relative w-screen overflow-hidden h-dvh">
-      <header class="raleway fixed top-0 left-0 w-full z-50 flex items-center h-[4rem] justify-between px-4 backdrop-blur-md">
-        <div>
-          <a href="./index.html" class="flex items-center">
-            <img src="./images/ccc-logo.png" alt="ccc-logo" class="w-[3.5rem] sm:w-[4rem]">
-            <p class="font-bold text-xl ml-1.5 whitespace-nowrap">C.C.C Obanikoro</p>
-          </a>
-        </div>
-    
-        <nav class="">
-          <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-white backdrop-blur-md sidebar">
-            <li onclick="hideSidebar()">
-              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
-              </a>
-            </li>
-            <li class="w-full"><a href="./index.html">Home</a></li>
-            <li class="w-full"><a href="./service.html">Service</a></li>
-            <li class="w-full"><a href="./choir.html">Choir</a></li>
-            <li class="w-full"><a class="active" href="./sunday-school.html">Sunday School</a></li>
-            <li class="w-full"><a href="./events.html">Events</a></li>
-            <li class="w-full"><a href="./about.html">About</a></li>
-            <li class="w-full"><a href="/gallery/church-gallery.html">Gallery</a></li>
-            
-          </ul>
-    
-          <ul class="w-full flex gap-6 items-center">
-            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
-            <li class="hideOnMobile"><a href="./service.html">Service</a></li>
-            <li class="hideOnMobile"><a href="./choir.html">Choir</a></li>
-            <li class="hideOnMobile"><a class="active" href="./sunday-school.html">Sunday School</a></li>
-            <li class="hideOnMobile"><a href="./events.html">Events</a></li>
-            <li class="hideOnMobile"><a href="./about.html">About</a></li>
-            <li class="hideOnMobile"><a href="gallery/church-gallery.html">Gallery</a></li>
-            
-            <li onclick="showSidebar()" class="menuBtn">
-              <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <header>
+       
       </header>
 
       <!--Bg video-->
       <div>
-        <video muted autoplay loop class=" absolute top-0 left-0 w-full h-full object-cover  opacity-90 sm:backdrop-blur-md">
+        <video muted autoplay loop class=" absolute top-0 left-0 w-full h-full object-cover opacity-90 sm:backdrop-blur-md">
           <source src="./images/sunday-sch/video1.mp4">
         </video> 
       </div>
 
       <!--Welcome text-->
-      <div class="raleway z-20 font-semibold flex flex-col gap-6 justify-center items-center h-screen w-screen absolute left-0 sm:px-2">
-        <h1 class=" leading-[1.5] text-gray-900 font-bold text-3xl uppercase text-center sm:max-w-[85%] lg:text-4xl">
+      <div class="z-20 flex flex-col gap-6 justify-center items-center h-dvh w-screen absolute left-0 sm:px-2">
+        <h1 class="uppercase text-center sm:max-w-[85%]">
           Welcome to c.c.c obanikoro Sunday school, where we come together to learn and grow in God's word
         </h1>
       </div>
     </section>
 
-  <main class="relative flex flex-col gap-15 px-3 pt-7 font-medium bg-gray-200 text-black text-[19px] sm:text-[21px] sm:px-4 sm:pt-8 lg:text-[23px] w-full">
+  <main class="relative flex flex-col gap-15 px-3 pt-7 sm:px-4 sm:pt-8 w-full">
 
     <!--Mission and what the Sunday sch is abt-->
-    <section class="flex flex-col gap-4 pt-7 sm:mx-auto sm:max-w-[90%]">
+    <section class="flex flex-col gap-4 pt-7">
 
-      <h2 class="raleway text-2xl font-bold uppercase sm:text-3xl">The Heart of Our Church</h2>
+      <h2 class="uppercase">The Heart of Our Church</h2>
 
       <article class="flex flex-col gap-3">
         <p>
@@ -95,24 +57,24 @@
     </section>
 
     <!--Abt Sunday sch n Teachers-->
-    <section class="flex flex-col gap-4 sm:mx-auto sm:max-w-[90%]">
-      <h2 class="raleway text-2xl font-bold uppercase sm:text-3xl">
+    <section class="flex flex-col gap-4">
+      <h2 class="uppercase">
         The Face Behind Our Children's Ministry
-      </h2>
+      </h2>    
       <p class="mb-4">
         Our Sunday school teachers and mentors are passionate and committed to teaching and guiding our children and sharing God's love with them. They're more than just educators - they're mentors, role models, and caregivers who pour their hearts into helping our kids develop a strong foundation in God's word.
         They are the backbone of our children's ministry.
       </p>
       <!--Asst. Ldr Ayowolemi article-->
-      <article class="flex flex-col gap-4 bg-white mx-auto max-w-80 sm:gap-4 sm:grid sm:grid-cols-2 sm:max-w-[100rem] sm:items-start md:max-w-160 width-animation sm:text-[21px] lg:text-[21px]">
+      <article class="flex flex-col gap-4 mx-auto max-w-80 sm:gap-4 sm:grid sm:grid-cols-2 sm:max-w-[100rem] sm:items-start md:max-w-160 width-animation">
         <img src="./images/sunday-sch/sch-head.jpg" alt="">
         <p class="mx-3 mb-7 sm:mt-7">
-          <span class="text-gray-500">Asst. Leader</span> Olu-aina M. Ayowolemi is a devoted follower of Jesus Christ with a heart for serving children and families. As our Sunday School's Coordinator, he oversees our Sunday school programs, special events, and volunteer team.
+          <span class="">Asst. Leader</span> Olu-aina M. Ayowolemi is a devoted follower of Jesus Christ with a heart for serving children and families. As our Sunday School's Coordinator, he oversees our Sunday school programs, special events, and volunteer team.
         </p>
       </article>
 
       <!--Sunday school team and teachers article-->
-      <article class="flex flex-col gap-4 bg-white mx-auto max-w-80 sm:gap-4 sm:grid sm:grid-cols-2 sm:max-w-[100rem] sm:items-start md:max-w-160 width-animation sm:text-[21px] lg:text-[21px]">
+      <article class="flex flex-col gap-4 mx-auto max-w-80 sm:gap-4 sm:grid sm:grid-cols-2 sm:max-w-[100rem] sm:items-start md:max-w-160">
         <img src="./images/sunday-sch/s14.jpg" alt="">
         <p class="mx-3 mb-7 sm:mt-7">
           We're so grateful for our incredible team of Sunday school teachers! They're dedicated, passionate, and committed to helping our kids grow in their faith.
@@ -123,27 +85,27 @@
     </section>
 
     <!--Upcoming events-->
-    <section class="sm:mx-auto sm:max-w-[90%] flex flex-col gap-3">
-      <h2 class="raleway text-2xl font-bold uppercase sm:text-3xl">
+    <section class="flex flex-col gap-3">
+      <h2 class="raleway uppercase">
         Upcoming events
       </h2>
       <p>
         Join us for our upcoming worship events, whether you're a longtime member or just visiting, we welcome you to join us for this special time of worship and praise.
       </p>
       <!--When kid's praise-->
-      <article class="flex flex-col bg-white article cursor-pointer max-w-80 mx-auto width-animation mt-2 sm:grid sm:grid-cols-2 sm:max-w-[660px] sm:items-stretch md:max-w-160 ">
+      <article class="flex flex-col cursor-pointer max-w-80 mx-auto mt-2 sm:grid sm:grid-cols-2 sm:max-w-[660px] sm:items-stretch md:max-w-160 ">
         <a href="./events/kids-praise.html">
           <!--Image and Date-->
           <div class="relative">
             <img src="./images/kids-praise/p11.jpg" alt="">
             <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-gray-50 md:px-6 md:py-5 backdrop-blur-md">
-              <p class="text-4xl font-semibold mb-2">19</p>
-              <p class="text-xl uppercase">apr</p>
+              <p class="mb-2">19</p>
+              <p class="uppercase">apr</p>
             </div>
           </div>
           <!--Brief abt the event-->
           <div class="px-6 py-6 flex flex-col gap-4 items-start sm:justify-between">
-            <h2 class="font-bold text-2xl mb-3 uppercase sm:text-3xl">
+            <h2 class="mb-3 uppercase">
               When kids praise
             </h2>
             <div class="mb-1 flex items-center gap-4">
@@ -155,7 +117,7 @@
               <p>10:00 AM</p>
             </div>
             <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
+            <button class="px-6 py-2">
               <a href="./events/kids-praise.html">
                 Learn more
               </a>
@@ -167,14 +129,14 @@
     </section>
 
     <!--Sunday sch activities-->
-    <section class="flex flex-col items-start gap-4 sm:mx-auto sm:max-w-[90%]">
-      <h2 class="raleway text-2xl font-bold uppercase sm:text-3xl">
+    <section class="flex flex-col items-start gap-4">
+      <h2 class="uppercase">
         Sunday School Spotlight
       </h2>
       <p>
         Get ready for an adventure! Our Sunday school activities are packed with games, crafts, and exciting lessons that will help you discover the joy of following Jesus. Join us for interactive and engaging activities that bring the Bible to life!
       </p>
-      <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2 hover:bg-blue-100">
+      <button class="px-6 py-2">
         <a href="./gallery/sunday-school-gallery.html">
           Explore the moment!
         </a>
@@ -182,8 +144,8 @@
     </section>
 
     <!--Contact page (Volunteer)-->
-    <section class="flex flex-col gap-4 sm:mx-auto sm:max-w-[90%] pb-7">
-      <h2 class="raleway text-2xl font-bold uppercase sm:text-3xl">
+    <section class="flex flex-col gap-4 pb-7">
+      <h2 class="uppercase">
         Get Involved!
       </h2>
       <p>
