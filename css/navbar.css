@@ -55,7 +55,7 @@ nav a:hover {
 }
 nav a.active {
   font-weight: 800;
-  font-size: 20px;
+  font-size: ;
 }
 nav svg {
   cursor: pointer;
