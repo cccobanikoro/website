@@ -41,7 +41,10 @@ p {
   line-height: 1.4;
   word-spacing: 1px;
 }
-/* For Buttons 
+main {
+  position: relative;
+  top: 60px;
+}
 button {
   background-color: var(--primary-color);
   color: var(--off-white);
@@ -54,4 +57,3 @@ button {
 button:hover {
   background-color: var(--accent-color);
 }
-*/

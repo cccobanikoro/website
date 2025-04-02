@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 3vw;
+  height: 60px;
 }
 .header .logo {
   display: flex;
@@ -22,9 +23,6 @@
 .header .logo-name {
   font-size: 17px;
   text-decoration: none;
-}
-.nav-bar a:hover {
-  
 }
 a.active {
   color: var(--primary-color);
@@ -55,7 +53,7 @@ a.active {
 }
 .navbar-burger {
   background-color: transparent;
-  color: hsl(0, 0%, 0%);
+  color: var(--text-color);
   cursor: pointer;
   padding: .5;
 }
@@ -77,11 +75,10 @@ a.active {
   z-index: 200;
 }
 .navbar-menu a {
-  color: hsl(0, 0%, 100%);
+  color: var(--off-white);
   display: block;
   padding: 0.8em;
   font-size: 17px;
-  transition: background-color 0.3s;
 }
 #nav-toggle:checked ~ .navbar-menu {
   display: block;
@@ -105,14 +102,17 @@ a.active {
     opacity: 1;
     visibility: visible;
     transform: none;
+    height: 100%;
   }
   .navbar-menu li {
     margin-bottom: 0;
   }
   .navbar-menu a {
-    color: black;
+    color: var(--text-color);
   }
   .navbar-menu a:hover {
-    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+    transition: transform 3ms;
+    color: var(--primary-color);
   }
 }

@@ -1,6 +1,5 @@
 let img = document.getElementById('img-altar');
 let text = document.getElementById('text');
-const header = document.querySelector('.header');
 
 // PARALLAX FOR INDEX 
 window.addEventListener('scroll', () => {
@@ -11,13 +10,15 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', function() {
+  /*
   if (window.scrollY > 0) {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
-  }
+  } */
 });
 
+/*
 const typingText = document.querySelector(".sec-text");
 
 const textLoad = () => {
@@ -33,3 +34,4 @@ const textLoad = () => {
 }
 textLoad();
 setInterval(textLoad, 12000);
+*/
