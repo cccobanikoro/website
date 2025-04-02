@@ -94,6 +94,7 @@ a.active {
   }
   .navbar-menu {
     display: flex;
+    padding: 0; 
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
@@ -113,8 +114,7 @@ a.active {
     color: var(--text-color);
   }
   .navbar-menu a:hover {
-    transform: scale(1.2);
-    transition: transform 3ms;
+    transition: color .5s;
     color: var(--primary-color);
   }
 }

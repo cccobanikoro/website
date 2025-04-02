@@ -28,7 +28,6 @@ html {
 }
 .main-parallax {
   min-height: 100dvh;
-  padding: 30vw 0 5vw;
   position: relative;
   transform-style: inherit;
   width: 100vw;
@@ -51,11 +50,32 @@ html {
   z-index: -10;
   min-height: 100dvh;
 }
-.main-parallax .index-hero-section {
-  /* text-align: center;
-  padding: 1em 0; */
+.index-hero-section {
+  padding: 0 5vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+.cta-button {
+  padding: 15px 30px;
+  background-color: #1447E6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: var(--secondary-color);
 }
 
+@media (min-width: 790px) {
+  .hero-h1 {
+    font-size: 40px;
+  }
+}
 /*
 .textContainer {
   overflow-x: hidden;
