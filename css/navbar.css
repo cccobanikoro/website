@@ -22,6 +22,7 @@
 }
 .header .logo-name {
   font-size: 17px;
+  color: var(--text-color);
   text-decoration: none;
 }
 a.active {
@@ -62,6 +63,7 @@ a.active {
 }
 .navbar-menu {
   padding-left: 15px;
+  padding-top: 15px;
   background-color: var(--primary-color);
   position: absolute;
   top: 100%;
