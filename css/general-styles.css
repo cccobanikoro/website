@@ -8,6 +8,7 @@
 }
 body {
   background-color: var(--off-white);
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   min-height: 100dvh;
   overflow-x: hidden;

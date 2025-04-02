@@ -1,10 +1,14 @@
-/*Navigation Menu Only*/
+* {
+  padding: 0;
+  margin: 0;
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--off-white);
+  backdrop-filter: blur(10px);
+  background-color: rgba(155, 147, 147, 0.5);
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -27,7 +31,7 @@
   
 }
 a.active {
-  color: var(--primary-color);
+  border-bottom: 3px solid black;
 }
 .toggle-button {
   display: flex;
@@ -36,12 +40,13 @@ a.active {
   width: 30px;
   height: 20px;
   cursor: pointer;
+  margin-right: 5vw;
   padding-right: 2vw;
 }
 .line {
   width: 30px;
   height: 3px;
-  background-color: var(--text-color);
+  background-color: #000000;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .navbar {
@@ -57,39 +62,39 @@ a.active {
   background-color: transparent;
   color: hsl(0, 0%, 0%);
   cursor: pointer;
+  font-size: 1.5em;
   padding: .5;
 }
 #nav-toggle {
   display: none !important;
 }
 .navbar-menu {
-  padding-left: 15px;
-  background-color: var(--primary-color);
+  text-align: center;
+  background-color: hsl(231, 69%, 60%);
   position: absolute;
   top: 100%;
+  border-radius: 5px;
   right: 0;
-  width: 100%;
-  height: 100vh;
-  transform: translateX(-200px);
+  width: 60%;
+  transform: translateY(-0px);
   opacity: 0;
   visibility: hidden;
-  transition: transform 0.5s ease, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  z-index: 200;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 .navbar-menu a {
   color: hsl(0, 0%, 100%);
   display: block;
   padding: 0.8em;
-  font-size: 17px;
+  font-size: 1.2em;
   transition: background-color 0.3s;
 }
 #nav-toggle:checked ~ .navbar-menu {
   display: block;
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
+  transform: translateY(0);
 }
-@media (min-width: 892px) {
+@media (min-width: 710px) {
   .navbar-burger {
     display: none;
   }
