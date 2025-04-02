@@ -64,7 +64,8 @@ a.active {
 .navbar-menu {
   padding-left: 15px;
   padding-top: 15px;
-  background-color: var(--primary-color);
+  background-color: var(--off-white);
+  color: var(--text-color);
   position: absolute;
   top: 100%;
   right: 0;
@@ -77,7 +78,6 @@ a.active {
   z-index: 200;
 }
 .navbar-menu a {
-  color: var(--off-white);
   display: block;
   padding: 0.8em;
   font-size: 17px;
