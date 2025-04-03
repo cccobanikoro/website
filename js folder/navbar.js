@@ -1,12 +1,10 @@
-/*
-let menuList = document.getElementsByClassName("menuList");
-menuList.style.maxHeight = "0px";
+const body = document.body;
+const navToggle = document.getElementById('nav-toggle');
 
-function toggleMenu() {
-  if (menuList.style.maxHeight === "0px") {
-    menuList.style.maxHeight = "100%";
+navToggle.addEventListener('change', function() {
+  if (navToggle.checked) {
+    body.classList.add('no-scroll');
   } else {
-    menuList.style.maxHeight = "0px"
+    body.classList.remove('no-scroll');
   }
-}
-*/
+});

@@ -27,6 +27,7 @@
 }
 a.active {
   color: var(--primary-color);
+  font-weight: 600;
 }
 .toggle-button {
   display: flex;
@@ -36,6 +37,10 @@ a.active {
   height: 20px;
   cursor: pointer;
   padding-right: 2vw;
+}
+.navbar-menu a:hover {
+  transition: color .5s;
+  color: var(--accent-color);
 }
 .line {
   width: 30px;
@@ -75,7 +80,7 @@ a.active {
   opacity: 0;
   visibility: hidden;
   transition: transform 0.5s ease, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  z-index: 200;
+  z-index: 2000;
 }
 .navbar-menu a {
   display: block;
@@ -87,6 +92,9 @@ a.active {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
+}
+body.no-scroll {
+  overflow: hidden;
 }
 @media (min-width: 892px) {
   .navbar-burger {
@@ -115,6 +123,6 @@ a.active {
   }
   .navbar-menu a:hover {
     transition: color .5s;
-    color: var(--primary-color);
+    color: var(--accent-color);
   }
 }

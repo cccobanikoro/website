@@ -430,6 +430,9 @@
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
   }
@@ -540,6 +543,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
