@@ -2,7 +2,6 @@
   --off-white: #FAFAFA; /* Off-white for body-bg*/
   --text-color: #1A1A1A; /*Soft-black color */
   --primary-color: #1447E6; /* Blue color */
-  --secondary-color: #ffffff;
   --accent-color: #D3D3D3; /*Light gray color */
   --text-size: 17px;
 }
@@ -46,6 +45,7 @@ main {
   top: 60px;
 }
 button {
+  padding: .8em 1.6em;
   background-color: var(--primary-color);
   color: var(--off-white);
   border: none;
@@ -54,6 +54,4 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: var(--accent-color);
-}
+

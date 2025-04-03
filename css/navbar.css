@@ -12,6 +12,11 @@
   padding: 5px 3vw;
   height: 60px;
 }
+.scrolled-header {
+  position: fixed;
+  top: 0;
+  
+}
 .header .logo {
   display: flex;
   align-items: center;

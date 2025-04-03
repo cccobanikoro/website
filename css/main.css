@@ -16,14 +16,16 @@
 html {
   overflow: hidden;
   height: 100%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
+
+/*Index-Hero-Section*/
 .index-body {
   margin: 0;
   padding: 0;
   perspective: 1px;
   transform-style: preserve-3d;
-  height: 100%;
+  height: 100vh;
   overflow-y: scroll;
 }
 .main-parallax {
@@ -60,7 +62,7 @@ html {
   gap: 30px;
 }
 .cta-button {
-  padding: 15px 30px;
+  padding: .8em 1.6em;
   background-color: #1447E6;
   color: white;
   text-decoration: none;
@@ -69,7 +71,48 @@ html {
 }
 .cta-button:hover {
   background-color: var(--secondary-color);
+  color: var(--text-color);
 }
+
+/*Index-About-Section*/
+.index-about-section {
+  background: var(--off-white);
+}
+.index-about-section h2 {
+  color: var(--primary-color);
+}
+.text-btn-div {
+  box-shadow: 0 8px 10px var(--accent-color),
+                      0 -8px 10px var(--accent-color),
+                      8px 0 10px var(--accent-color),
+                      -8px 0 10px var(--accent-color);
+}
+.text-btn-div .text-1 {
+  font-size: 18px;
+}
+.text-btn-div .text-2 {
+  font-weight: 300;
+}
+.text-btn-div button {
+  background-color: var(--off-white);
+  border: 2px solid var(--primary-color);
+  color: (--text-color);
+}
+.text-btn-div button:hover {
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+
+
+
+
+/*Index--Section*/
+
+
+
+
+
+
 
 @media (min-width: 790px) {
   .hero-h1 {

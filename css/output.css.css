@@ -433,6 +433,9 @@
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
   }
@@ -543,6 +546,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1797,8 +1803,8 @@
   .scheme-only-light {
     color-scheme: only light;
   }
-  .opacity-80 {
-    opacity: 80%;
+  .opacity-20 {
+    opacity: 20%;
   }
   .opacity-90 {
     opacity: 90%;
@@ -2347,21 +2353,6 @@ html {
 }
 .text-btn-div {
   box-shadow: 0 8px 10px var(--accent-color), 0 -8px 10px var(--accent-color), 8px 0 10px var(--accent-color), -8px 0 10px var(--accent-color);
-}
-.text-btn-div .text-1 {
-  font-size: 18px;
-}
-.text-btn-div .text-2 {
-  font-weight: 300;
-}
-.text-btn-div button {
-  background-color: var(--off-white);
-  border: 2px solid var(--primary-color);
-  color: (--text-color);
-}
-.text-btn-div button:hover {
-  background-color: var(--primary-color);
-  color: var(--off-white);
 }
 @media (min-width: 790px) {
   .hero-h1 {
