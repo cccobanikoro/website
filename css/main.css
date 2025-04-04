@@ -96,7 +96,7 @@ html {
   background-color: var(--primary-color);
   color: (--text-color);
 }
-.text-btn-div button:hover {
+.text-btn-div button:hover, .index-gallery-section button:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
 }
@@ -138,6 +138,7 @@ footer {
 footer .logo-img {
   width: 4rem;
 }
+
 
 @media (min-width: 790px) {
   .hero-h1 {
