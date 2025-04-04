@@ -101,6 +101,41 @@ html {
   color: var(--text-color);
 }
 
+/*Index-Gallery-Section*/
+.index-gallery-section {
+  background: var(--accent-color);
+}
+.index-gallery-section .img-div {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.index-gallery-section .img-div img {
+  width: 100%;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+}
+.index-gallery-section .p-text {
+  font-weight: 300;
+}
+.index-gallery-section button {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
+
+/*Index-Info-Section*/
+.index-info-section {
+  background-color: var(--off-white);
+}
+
+/*Footer*/
+footer {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
+
 @media (min-width: 790px) {
   .hero-h1 {
     font-size: 40px;

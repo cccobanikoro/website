@@ -403,6 +403,9 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
@@ -591,6 +594,9 @@
   }
   .max-w-\[60ch\] {
     max-width: 60ch;
+  }
+  .max-w-\[70ch\] {
+    max-width: 70ch;
   }
   .max-w-\[90\%\] {
     max-width: 90%;
@@ -1447,14 +1453,14 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-\[5vw\] {
+    padding-inline: 5vw;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -1471,11 +1477,17 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-14 {
+    padding-top: calc(var(--spacing) * 14);
+  }
   .pt-18 {
     padding-top: calc(var(--spacing) * 18);
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
   }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
@@ -1488,6 +1500,9 @@
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-14 {
+    padding-bottom: calc(var(--spacing) * 14);
   }
   .text-center {
     text-align: center;
@@ -2360,6 +2375,35 @@ html {
 .text-btn-div button:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
+}
+.index-gallery-section {
+  background: var(--accent-color);
+}
+.index-gallery-section .img-div {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.index-gallery-section .img-div img {
+  width: 100%;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+}
+.index-gallery-section .p-text {
+  font-weight: 300;
+}
+.index-gallery-section button {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
+.index-info-section {
+  background-color: var(--off-white);
+}
+footer {
+  background: var(--primary-color);
+  color: var(--off-white);
 }
 @media (min-width: 790px) {
   .hero-h1 {
