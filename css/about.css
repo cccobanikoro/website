@@ -1,12 +1,11 @@
 .section-1{
     margin-top: 100px;
-border: 15px solid skyblue;
-margin-bottom: 40px;
+    border: 15px solid skyblue;
+    margin-bottom: 40px;
 }
 .h1-1{
     text-align: center;
     color: dodgerblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .rev{
     width: 90%;

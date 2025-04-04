@@ -1,15 +1,40 @@
-.open-sans {
-  font-family: 'Open sans';
+@keyframes slideLeft {
+  from {
+    transform: translateX(-900px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-.raleway {
-  font-family: 'Raleway';
+.animated-h1 {
+  animation: slideLeft 2s ease-out forwards !important;
 }
-.event-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  cursor: pointer;
+.animated-p1 {
+  animation-delay: 2s;
+}
+.animated-p2 {
+  animation-delay: 4s;
+}
+.animated-p3 {
+  animation-delay: 7s;
+}
+@keyframes width {
+  from {
+    visibility: hidden;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.width-animation {
+  animation: width linear;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+  transition-duration: .7s;
 }
 @keyframes appear {
   from {
@@ -28,7 +53,7 @@
   transition-duration: .7s;
 }
 .block-animation:hover {
-  box-shadow: 10px 10px 10px #8490a8 , -8px -8px 8px #e5e7eb;
+  box-shadow: 10px 10px 10px , -8px -8px 8px ;
 }
 @keyframes typing {
   0% { width: 0; }
@@ -46,7 +71,7 @@
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
-  border-right: 3px solid black;
+  border-right: 3px solid ;
   width: 0;
   animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
 }
@@ -94,6 +119,15 @@
   animation: adultSlider 80s linear infinite;
 }
 
+@keyframes animateMultipleText {
+  40%, 60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 /*Img slider for 20 images*/
 @keyframes slider {
   0%, 4% { transform: translateX(0); }
@@ -139,17 +173,4 @@
 
 .img-slider {
   animation: imageSlider 40s steps(1, end) infinite;
-}
-
-@media (min-width: 640px) {
-  .event-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: stretch; 
-  }
-}
-@media (min-width: 1024px) {
-  .event-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

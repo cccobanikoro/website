@@ -271,12 +271,6 @@
   .isolation-auto {
     isolation: auto;
   }
-<<<<<<< HEAD
-  .z-10 {
-    z-index: 10;
-  }
-=======
->>>>>>> 2191ef3b294cf526c82223a231e4f51da15e575b
   .z-20 {
     z-index: 20;
   }
@@ -439,6 +433,9 @@
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
   }
@@ -549,6 +546,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1803,8 +1803,8 @@
   .scheme-only-light {
     color-scheme: only light;
   }
-  .opacity-80 {
-    opacity: 80%;
+  .opacity-20 {
+    opacity: 20%;
   }
   .opacity-90 {
     opacity: 90%;
@@ -2309,45 +2309,7 @@ html {
 .main-parallax, .main-parallax:before {
   background: 50% 50% / cover;
 }
-<<<<<<< HEAD
-.parallax img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100dvh;
-  z-index: -1;
-  filter: brightness(0.8);
-}
-.sec {
-  position: relative;
-  background: rgb(221, 221, 221);
-}
-.header-white-bg {
-  background-color: #FAF9F6;
-}
-.index-h1 {
-  font-size: clamp(1.5rem, 2.5rem, 3rem);
-  font-weight: 800;
-}
-.textContainer {
-  overflow-x: hidden;
-}
-.textContainer .typing-text {
-  position: relative;
-  text-wrap: nowrap;
-  font-size: 2rem;
-  font-weight: 700;
-  color: rgb(40, 56, 202);
-}
-.typing-text.first-text {
-  color: rgb(1, 4, 31);
-}
-.typing-text.sec-text::before {
-=======
 .main-parallax::before {
->>>>>>> 2191ef3b294cf526c82223a231e4f51da15e575b
   content: "";
   position: absolute;
   left: 0;
@@ -2391,21 +2353,6 @@ html {
 }
 .text-btn-div {
   box-shadow: 0 8px 10px var(--accent-color), 0 -8px 10px var(--accent-color), 8px 0 10px var(--accent-color), -8px 0 10px var(--accent-color);
-}
-.text-btn-div .text-1 {
-  font-size: 18px;
-}
-.text-btn-div .text-2 {
-  font-weight: 300;
-}
-.text-btn-div button {
-  background-color: var(--off-white);
-  border: 2px solid var(--primary-color);
-  color: (--text-color);
-}
-.text-btn-div button:hover {
-  background-color: var(--primary-color);
-  color: var(--off-white);
 }
 @media (min-width: 790px) {
   .hero-h1 {

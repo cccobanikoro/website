@@ -1,110 +1,77 @@
-@import url(./main-events.css);
+@import url(./general-styles.css);
+@import url(./events.css);
 @import url(./sunday-school.css);
 @import url(./choir.css);
 @import url(./gallery.css);
 @import url(./contact.css);
 @import url(./about.css);
+@import url(./navbar.css);
+@import url(./animations.css);
+@import url(./location.css);
+@import url(./service.css);
+
 @import "tailwindcss";
 
-.index-body {
-  background-color: #FAF9F6;
-  color: hsl(0, 0%, 0%);
-  min-height: 100dvh;
-  overflow-x: hidden;
-}
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  padding: 0 3vw;
-}
-.header.scrolled {
-  background-color: rgb(255, 255, 255);
-}
-.logo a {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  pointer-events: cursor;
-}
-.logo img {
-  width: clamp(40px, 10vw, 60px);
-}
-.logo p {
-  color: hsl(0, 0%, 0%);
-  font-weight: 600;
-  font-size: clamp(1rem, 1.25vw, 1.3rem);
-}
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-}
-.link-container {
+/*Parallax Scrolling*/
+html {
+  overflow: hidden;
   height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  scroll-behavior: smooth;
 }
-nav a {
-  height: 100%;
-  padding: 0 20px;
-  color: rgb(24, 24, 24);
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-nav a:hover {
-  color: hsla(0, 0%, 0%, 0.5);
-}
-nav a.active {
-  font-weight: 800;
-  font-size: 20px;
-}
-nav svg {
-  cursor: pointer;
-}
-#sidebar-active {
-  display: none;
-}
-.open-sidebar-btn, .close-sidebar-btn {
-  display: none;
-}
-.parallax {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100dvh;
-}
-#text {
-  position: absolute;
-}
-.parallax img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100dvh;
-  z-index: -1;
-  filter: brightness(0.8);
 
+/*Index-Hero-Section*/
+.index-body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-y: scroll;
 }
-.sec {
+.main-parallax {
+  min-height: 100dvh;
   position: relative;
-  background: rgb(221, 221, 221);
+  transform-style: inherit;
+  width: 100vw;
 }
-.header-white-bg {
-  background-color: #FAF9F6;
+.main-parallax, .main-parallax:before {
+  background: 50% 50% / cover;
+}
+.main-parallax::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background-image: url(../images/altar.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -10;
+  min-height: 100dvh;
+}
+.index-hero-section {
+  padding: 0 5vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+.cta-button {
+  padding: .8em 1.6em;
+  background-color: #1447E6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 .index-h1{
   font-size: 1rem;
@@ -112,68 +79,76 @@ nav svg {
   font-family: "Raleway", arial;
 }
 
-/*Text Animation*/
+/*Index-About-Section*/
+.index-about-section {
+  background: var(--off-white);
+}
+.index-about-section h2 {
+  color: var(--primary-color);
+}
+.text-btn-div {
+  box-shadow: 0 8px 10px var(--accent-color),
+                      0 -8px 10px var(--accent-color),
+                      8px 0 10px var(--accent-color),
+                      -8px 0 10px var(--accent-color);
+}
+.text-btn-div .text-1 {
+  font-size: 18px;
+}
+.text-btn-div .text-2 {
+  font-weight: 300;
+}
+.text-btn-div button {
+  background-color: var(--off-white);
+  border: 2px solid var(--primary-color);
+  color: (--text-color);
+}
+.text-btn-div button:hover {
+  background-color: var(--primary-color);
+  color: var(--off-white);
+}
+
+
+
+
+/*Index--Section*/
+
+
+
+
+
+
+
+@media (min-width: 790px) {
+  .hero-h1 {
+    font-size: 40px;
+  }
+}
+/*
 .textContainer {
   overflow-x: hidden;
 }
 .textContainer .typing-text {
   position: relative;
   text-wrap: nowrap;
-  font-size: 2rem;
-  font-weight: 700;
-  color: rgb(40, 56, 202);
+  font-size: ;
+  font-weight: ;
+  color: ;
 }
-.typing-text.first-text {
-  color: rgb(1, 4, 31);
+.textContainer .typing-text.first-text {
+  color: ;
 }
-.typing-text.sec-text::before {
+.textContainer .typing-text.sec-text::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  border-left: 3px solid rgb(40, 56, 202);
+  border-left: 3px solid ;
   animation: animateMultipleText 4s steps(12) infinite;
-  background-color: #FAF9F6;
+  background-color: ;
 }
-@keyframes animateMultipleText {
-  40%, 60% {
-    left: calc(100% + 4px);
-  }
-  100% {
-    left: 0%;
-  }
-}
+*/
 
-@media (max-width: 900px) {
-  .link-container {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-  }
-  nav a {
-    color: rgb(0, 0, 0);
-    box-sizing: border-box;
-    height: auto;
-    width: 100%;
-    padding: 20px 30px;
-    justify-content: flex-start;
-  }
-  .open-sidebar-btn, .close-sidebar-btn {
-    display: block;
-  }
-  .close-sidebar-btn {
-    padding: 20px 30px;
-  }
-  #sidebar-active:checked ~ .link-container {
-    display: flex;
-  }
-}
+

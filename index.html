@@ -9,50 +9,48 @@
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--Font Awesome for icons-->
+  <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
+  <!--TailwindCSS-->
   <link rel="stylesheet" href="./css/output.css">
+
   <title>CCC Obanikoro</title>
 </head>
 
-<body class="open-sans font-medium h-screen index-body">
+<body class="index-body">
 
-  <header class="header header-white-bg">
-    <div class="logo">
-      <a href="https:/cccobanikoro.com">
-        <img src="./images/ccc-logo.png" alt="ccc-logo">
-        <p>CCC Obanikoro</p>
-      </a>
-    </div>
+  <!--Navigation Menu-->
+  <header class="header">
+    <a href="./index.html" class="logo">
+      <img src="./images/ccc-logo.png" alt="" class="logo-img">
+      <p class="logo-name">CCC Obanikoro</p>
+    </a>
 
-    <nav class="navigation">
-
-      <input type="checkbox" id="sidebar-active">
-      <label for="sidebar-active" class="open-sidebar-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+    <nav class="">
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="navbar-burger cursor-pointer">
+        <div class="toggle-button" id="toggleButton">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </label>
-
-      <div class="link-container">
-        <label for="sidebar-active" class="close-sidebar-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
-        </label>
-
-        <a href="./index.html" class="active">Home</a>
-        <a href="./service.html">Services</a>
-        <a href="./about.html">About</a>
-        <a href="./choir.html">Choir</a>
-        <a href="./sunday-school.html">Sunday School</a>
-        <a href="./events.html">Events</a>
-        <a href="./gallery/church-gallery.html">Gallery</a>
-
-      </div>
-
+      <ul class="navbar-menu">
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./choir.html">Choir</a></li>
+        <li><a href="./sunday-school.html">Sunday School</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    
     </nav>
   </header>
 
-  <section class="parallax">
-    <img src="./images/altar.jpg" id="img-altar">
+  <main class="main-parallax">
     
+<<<<<<< HEAD
     <div id="text">
       <h1 class="index-h1">
         Embracing faith, hope and love. Join us at CCC Obanikoro Cathedral for worship, community, and spiritual growth.
@@ -72,11 +70,58 @@
         <span class="typing-text sec-text">WORSHIP</span>
         <!--Worship, Community and Service-->
       </div>
+=======
+    <!--Hero Section-->
+    <section class="index-hero-section">
+        <h1 class="hero-h1 capitalize">The Celestial Church of Christ, Obanikoro Cathedral.</h1>
+
+        <div class="flex gap-2 flex-col">
+          <p class="max-w-[60ch]">A church is a place where you can feel at home, where you can put your root down, like a tree planted by rivers of water.</p>
+          <p>-Psalm 1:3</p>
+        </div>
+        
+        <a href="service.html" class="cta-button">
+          Join Us
+        </a> 
+>>>>>>> 2191ef3b294cf526c82223a231e4f51da15e575b
     </section>
+
+    <!--About Section-->
+  <section class="index-about-section px-4 py-4 mx-auto">
+
+    <div class="text-img-div">
+      <p class="text-center italic capitalize p-title">About Our church</p>
+      <h2 class="text-center mb-4"><span class="uppercase">Ccc</span> Obanikoro Cathedral</h2>
+      <img src="./images/congregation/bg3.jpg" alt="" class="w-[100%] ">
+    </div>
+
+    <div class="text-btn-div px-5 py-6 flex flex-col items-center">
+      <p class="mb-3 text-center text-1">
+        We are a family of believers united by the teachings of Jesus Christ, committed to growing in our faith and sharing it with others.
+      </p>
+      <p class="mb-6 text-center opacity-80 text-2">
+        At CCC Obanikoro Cathedral, we believe that everyone is welcome, and we are here to support you in your journey with God.
+      </p>
+
+      <button>
+        <a href="./about.html">Explore Our Story</a>
+      </button>
+    </div>
+
+  </section>
+
+    <!--Pastor Section-->
+
+
+    <!---->
+    <!---->
+    <!---->
 
   </main>
 
-  <script src="./js folder/navbar.js"></script>
-  <script src="./js folder/main-index.js"></script>
+  <!--Footer and Copyright-->
+  <footer></footer>
+
+  <script type="module" src="./js folder/main-index.js"></script>
 </body>
 </html>

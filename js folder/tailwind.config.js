@@ -1,7 +1,6 @@
 module.exports = {
   content: [
-    "./src/**/*.{html,js,css}",
-    "../css/choir.css",
+    "./src/**/*.{html,js,css}"
   ],
   theme: {
     extend: {},

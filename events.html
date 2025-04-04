@@ -8,7 +8,7 @@
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!--Font Awesome for icons-->
   <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
   <!--TailwindCSS-->
@@ -19,59 +19,21 @@
 
 <body class="max-w-full h-screen">
   <!--Header and Nav menu-->
-  <header class="raleway fixed top-0 left-0 w-full z-10 flex items-center h-[4rem] justify-between px-4 backdrop-blur-sm">
-    <div>
-      <a href="./index.html" class="flex items-center">
-        <img src="./images/ccc-logo.png" alt="ccc-logo" class="w-[3.5rem] sm:w-[4rem]">
-        <p class="font-bold text-xl ml-1.5 whitespace-nowrap">C.C.C Obanikoro</p>
-      </a>
-    </div>
-
-    <nav class="">
-      <ul class="flex-col items-start px-6 pt-6 content-start gap-5 fixed top-0 right-0 h-screen w-[270px] z-50 bg-gray-50 sidebar">
-        <li onclick="hideSidebar()">
-          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
-          </a>
-        </li>
-        <li class="w-full"><a href="./index.html">Home</a></li>
-        <li class="w-full"><a href="./service.html">Service</a></li>
-        <li class="w-full"><a href="./choir.html">Choir</a></li>
-        <li class="w-full"><a href="./sunday-school.html">Sunday School</a></li>
-        <li class="w-full"><a href="./events.html" class="active">Events</a></li>
-        <li class="w-full"><a href="./about.html">About</a></li>
-        <li class="w-full"><a href="./gallery/church-gallery.html">Gallery</a></li>
-      </ul>
-
-      <ul class="w-full flex gap-6 items-center lg:gap-8">
-        <li class="hideOnMobile"><a href="./index.html" class="">Home</a></li>
-        <li class="hideOnMobile"><a href="./service.html">Service</a></li>
-        <li class="hideOnMobile"><a href="./choir.html">Choir</a></li>
-        <li class="hideOnMobile"><a href="./sunday-school.html">Sunday School</a></li>
-        <li class="hideOnMobile active"><a href="./events.html">Events</a></li>
-        <li class="hideOnMobile"><a href="./about.html">About</a></li>
-        <li class="hideOnMobile"><a href="./gallery/church-gallery.html">Gallery</a></li>
-        <li onclick="showSidebar()" class="menuBtn">
-          <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
   <!--Main-->
-  <main id="head" class="open-sans relative top-[4rem] px-4 font-medium text-black text-[19px] bg-gray-200">
+  <main id="head" class="relative pt-10 px-4">
 
     <!--Upcoming Events title and text-->
-    <section class="pt-2 mb-14 flex flex-col items-center gap-6 text-center mx-auto justify-center sm:max-w-[85%]">
-      <h1 class="text-3xl font-bold mt-5 lg:text-5xl raleway">
+    <section class="pt-2 mb-14 flex flex-col items-center gap-6 text-center justify-center">
+      <h1 class="mt-5">
         <span class="typing-text">What's Happening</span>
       </h1>
-      <p class="text-[1.2rem]">
+      <p class="">
         <!--Brief description abt the events-->
-        Join us for our upcoming worship events, where we'll come together to praise, pray, and learn from God's Word. Our worship services are designed to be inspiring, engaging, and relevant to everyday life. We'll have a powerful message, uplifting music, and a chance to connect with others. Whether you're a longtime member or just visiting, we welcome you to join us for this special time of worship and community.
+        Join us for our upcoming worship events, where we'll come together to praise, pray, and learn from God's Word.
+        <!--Our worship services are designed to be inspiring, engaging, and relevant to everyday life. We'll have a powerful message, uplifting music, and a chance to connect with others. Whether you're a longtime member or just visiting, we welcome you to join us for this special time of worship and community. -->
       </p>
-      <button class="px-6 py-3 rounded-md border-blue-700 text-gray-200 bg-blue-700 text-[1.1rem] hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
+      <button class="px-6 py-3 rounded-md">
         <a href="#events">
           Join for worship
         </a>
@@ -80,22 +42,22 @@
     </section>
 
     <!--Events Listings-->
-    <section id="events" class="flex flex-col items-center event-grid justify-center gap-6 mb-8 sm:max-w-[90%] mx-auto md:max-w-[85%] sm:mb-16">
+    <section id="events" class="flex flex-col items-center event-grid justify-center gap-6 mb-8 sm:mb-16">
 
       <!--Events 1 Palm sunday--->
-      <article class="flex flex-col bg-white cursor-pointer article max-w-80 h-full block-animation">
+      <article class="flex flex-col cursor-pointer block-animation">
         <a href="./events/palm-sunday.html">
           <!--Image and Date-->
           <div class="relative">
             <img src="./images/palm-sunday/p7.jpg" alt="kid's harvest image" class="event-img">
-            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-white md:px-6 md:py-5">
-              <p class="text-6xl font-semibold mb-2">13</p>
-              <p class="text-3xl">APR</p>
+            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20  md:px-6 md:py-5">
+              <p class="mb-2">13</p>
+              <p class="">APR</p>
             </div>
           </div>
           <!--Brief abt the event-->
           <div class="px-6 py-6 flex flex-col gap-4 items-start">
-            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
+            <h2 class="mb-3">
               PALM SUNDAY
             </h2>
             <div class="mb-1 flex items-center gap-4">
@@ -107,7 +69,7 @@
               <p>8:00 AM</p>
             </div>
             <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
+            <button class="border-2px-6 py-2">
               <a href="./events/palm-sunday.html">
                 Learn more
               </a>
@@ -118,185 +80,24 @@
       </article>
 
       <!--Events 2 When kids praise-->
-      <article class="flex flex-col bg-white article cursor-pointer max-w-80 block-animation">
-        <a href="./events/kids-praise.html">
-          <!--Image and Date-->
-          <div class="relative">
-            <img src="./images/kids-praise/p3.jpg" alt="kid's praise" class="event-img">
-            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-white md:px-6 md:py-5">
-              <p class="text-6xl font-semibold mb-2">19</p>
-              <p class="text-3xl">APR</p>
-            </div>
-          </div>
-          <!--Brief abt the event-->
-          <div class="px-6 py-6 flex flex-col gap-4 items-start">
-            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
-              WHEN KID'S PRAISE
-            </h2>
-            <div class="mb-1 flex items-center gap-4">
-              <i class="fa-solid fa-location-dot" style="color: #1447e6;"></i>
-              <p>Church Auditorium</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
-              <p>10:00 AM</p>
-            </div>
-            <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
-              <a href="./events/kids-praise.html">
-                Learn more
-              </a>
-            </button>
-          </div>
-
-        </a>
-      </article>
+      
 
       <!--Events 3 Cantata music festival-->
-      <article class="flex flex-col bg-white article  cursor-pointer max-w-80 block-animation">
-        <a href="./events/cantata.html">
-          <!--Image and Date-->
-          <div class="relative">
-            <img src="./images/cantata/c3.jpg" alt="cantata music image" class="event-img">
-            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-white md:px-6 md:py-5">
-              <p class="text-6xl font-semibold mb-2">11</p>
-              <p class="text-3xl">MAY</p>
-            </div>
-          </div>
-          <!--Brief abt the event-->
-          <div class="px-6 py-6 flex flex-col gap-4 items-start">
-            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
-              CANTATA - FESTIVAL OF SONGS
-            </h2>
-            <div class="mb-1 flex items-center gap-4">
-              <i class="fa-solid fa-location-dot" style="color: #1447e6;"></i>
-              <p>Church Auditorium</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
-              <p>10:00 AM</p>
-            </div>
-            <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
-              <a href="./events/cantata.html">
-                Learn more
-              </a>
-            </button>
-          </div>
-
-        </a>
-      </article>
+      
 
       <!--Events 4 Juvenile Harvest-->
-      <article class="flex flex-col bg-white article  cursor-pointer max-w-80 block-animation">
-        <a href="./events/juvenile.html">
-          <!--Image and Date-->
-          <div class="relative">
-            <img src="./images/ccc-juvenile/j1.jpg" alt="juvenile harvest" class="event-img">
-            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-white md:px-6 md:py-5">
-              <p class="text-6xl font-semibold mb-2">1</p>
-              <p class="text-3xl">JUN</p>
-            </div>
-          </div>
-          <!--Brief abt the event-->
-          <div class="px-6 py-6 flex flex-col gap-4 items-start">
-            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
-              JUVENILE HARVEST
-            </h2>
-            <div class="mb-1 flex items-center gap-4">
-              <i class="fa-solid fa-location-dot" style="color: #1447e6;"></i>
-              <p>Church Auditorium</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
-              <p>10:00 AM</p>
-            </div>
-            <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
-              <a href="./events/juvenile.html">
-                Learn more
-              </a>
-            </button>
-          </div>
-
-        </a>
-      </article>
+      
 
       <!--Events 5 Adult Harvest-->
-      <article class="flex flex-col bg-white article  cursor-pointer max-w-80 block-animation">
-        <a href="./events/adult-harvest.html">
-          <!--Image and Date-->
-          <div class="relative">
-            <img src="./images/congregation/bg1.jpg" alt="adult-harvest" class="event-img">
-            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-white md:px-6 md:py-5">
-              <p class="text-6xl font-semibold mb-2">12</p>
-              <p class="text-3xl">OCT</p>
-            </div>
-          </div>
-          <!--Brief abt the event-->
-          <div class="px-6 py-6 flex flex-col gap-4 items-start">
-            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
-              ADULT HARVEST
-            </h2>
-            <div class="mb-1 flex items-center gap-4">
-              <i class="fa-solid fa-location-dot" style="color: #1447e6;"></i>
-              <p>Church Auditorium</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
-              <p>10:00 AM</p>
-            </div>
-            <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
-              <a href="./events/adult-harvest.html">
-                Learn more
-              </a>
-            </button>
-          </div>
-
-        </a>
-      </article>
+      
 
       <!--Events 6 Christmas carol-->
-      <article class="flex flex-col bg-white article  cursor-pointer max-w-80 block-animation">
-        <a href="./events/carol.html">
-          <!--Image and Date-->
-          <div class="relative">
-            <img src="./images/carol/c1.jpg" alt="carol image" class="event-img">
-            <div class="absolute top-0 left-0 px-4 py-3 text-center z-20 bg-white md:px-6 md:py-5">
-              <p class="text-6xl font-semibold mb-2">13</p>
-              <p class="text-3xl">DEC</p>
-            </div>
-          </div>
-          <!--Brief abt the event-->
-          <div class="px-6 py-6 flex flex-col gap-4 items-start">
-            <h2 class="font-bold text-2xl mb-3 sm:text-3xl">
-              CHRISTMAS CAROL
-            </h2>
-            <div class="mb-1 flex items-center gap-4">
-              <i class="fa-solid fa-location-dot" style="color: #1447e6;"></i>
-              <p>Church Auditorium</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-clock" style="color: #1447e6;"></i>
-              <p>11:00 AM</p>
-            </div>
-            <!--Btn for more info-->
-            <button class="border-2 rounded-sm border-blue-700 text-white bg-blue-700 px-6 py-2 hover:bg-white hover:text-blue-700 duration-100 hover:border-blue-700 hover:border-2">
-              <a href="./events/carol.html">
-                Learn more
-              </a>
-            </button>
-          </div>
-
-        </a>
-      </article>
 
     </section>
 
     <!-- CTA - Get involved -->
-    <section class="mb-14 flex flex-col gap-5 mx-auto sm:max-w-[80%]">
-      <h2 class="text-3xl font-semibold raleway sm:text-4xl">
+    <section class="mb-14 flex flex-col gap-5">
+      <h2 class="">
         Join the Movement
       </h2>
       <p>
@@ -304,29 +105,14 @@
       </p>
       
       <article>
-        <p class="font-semibold mb-2 text-xl">
+        <p class="mb-2">
           Inform us of your:
         </p>
         <p class="flex items-center gap-3">
-          <span class="text-6xl">&middot;</span>
+          <span class="">&middot;</span>
           <span>Birthday celebrations</span>
         </p>
-        <p class="flex items-center gap-3">
-          <span class="text-6xl">&middot;</span>
-          <span>Wedding</span>
-        </p>
-        <p class="flex items-center gap-3">
-          <span class="text-6xl">&middot;</span>
-          <span>House warming</span>
-        </p>
-        <p class="flex items-center gap-3">
-          <span class="text-6xl">&middot;</span>
-          <span>Baby christening</span>
-        </p>
-        <p class="flex items-center gap-3">
-          <span class="text-6xl">&middot;</span>
-          <span>Comments or any other engagements</span>
-        </p>
+        
       </article>
     </section>
 

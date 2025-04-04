@@ -1,20 +1,10 @@
-function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.add('show');
-}
+const body = document.body;
+const navToggle = document.getElementById('nav-toggle');
 
-function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.remove('show');
-}
-
-
-/*
-function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.style.display = 'flex'
-}
-function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.style.display = 'none'
-} */
+navToggle.addEventListener('change', function() {
+  if (navToggle.checked) {
+    body.classList.add('no-scroll');
+  } else {
+    body.classList.remove('no-scroll');
+  }
+});
