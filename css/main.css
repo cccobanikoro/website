@@ -135,6 +135,9 @@ footer {
   background: var(--primary-color);
   color: var(--off-white);
 }
+footer .logo-img {
+  width: 4rem;
+}
 
 @media (min-width: 790px) {
   .hero-h1 {

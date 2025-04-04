@@ -1465,6 +1465,9 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-14 {
+    padding-block: calc(var(--spacing) * 14);
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
@@ -2404,6 +2407,9 @@ html {
 footer {
   background: var(--primary-color);
   color: var(--off-white);
+}
+footer .logo-img {
+  width: 4rem;
 }
 @media (min-width: 790px) {
   .hero-h1 {
