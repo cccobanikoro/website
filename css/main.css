@@ -72,6 +72,11 @@ html {
   background-color: var(--off-white);
   color: var(--text-color);
 }
+.index-h1{
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Raleway", arial;
+}
 
 /*Index-About-Section*/
 .index-about-section {
