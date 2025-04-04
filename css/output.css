@@ -2335,7 +2335,7 @@ html {
   transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--off-white);
   color: var(--text-color);
 }
 .index-about-section {
@@ -2354,13 +2354,12 @@ html {
   font-weight: 300;
 }
 .text-btn-div button {
-  background-color: var(--off-white);
-  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
   color: (--text-color);
 }
 .text-btn-div button:hover {
-  background-color: var(--primary-color);
-  color: var(--off-white);
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 @media (min-width: 790px) {
   .hero-h1 {
