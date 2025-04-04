@@ -1,5 +1,25 @@
 import "./navbar.js";
 
+
+
+
+
+
+
+
+
+
+
+/*
+const text = document.getElementById('text-h2');
+const imgAltar = document.getElementById('altar');
+
+window.addEventListener('scroll', () => {
+  let value = window.scrollY;
+
+  text.style.marginTop = value * 1.5 + 'px';
+}); */
+
 /*
 const typingText = document.querySelector(".sec-text");
 

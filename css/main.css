@@ -43,7 +43,6 @@ html {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   display: block;
   background-image: url(../images/altar.jpg);
   background-size: cover;
@@ -103,22 +102,12 @@ html {
   color: var(--off-white);
 }
 
-
-
-
-/*Index--Section*/
-
-
-
-
-
-
-
 @media (min-width: 790px) {
   .hero-h1 {
     font-size: 40px;
   }
 }
+
 /*
 .textContainer {
   overflow-x: hidden;
@@ -145,5 +134,3 @@ html {
   background-color: ;
 }
 */
-
-
