@@ -143,7 +143,12 @@ footer {
 footer .logo-img {
   width: 4rem;
 }
-
+footer .link-hover {
+  transition: color .2s ease;
+}
+footer .link-hover:hover {
+  color: var(--accent-color)
+}
 
 @media (min-width: 790px) {
   .hero-h1 {
