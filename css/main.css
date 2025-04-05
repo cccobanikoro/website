@@ -149,6 +149,10 @@ footer .link-hover {
 footer .link-hover:hover {
   color: var(--accent-color)
 }
+footer .social-icons:hover {
+  translate: scale(1.2);
+  transition: translate .7s ease;
+}
 
 @media (min-width: 790px) {
   .hero-h1 {

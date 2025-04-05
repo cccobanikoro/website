@@ -1,9 +1,20 @@
 import "./navbar.js";
 
+const bibleText = document.getElementById('index-bible-text1');
+const bibleVerse = document.getElementById('index-bible-text2');
 
-
-
-
+const bibleTextChange = () => {
+  setTimeout(() => {
+    bibleText.textContent = "A church is a place where you can feel at home, where you can put your root down, like a tree planted by rivers of water.";
+    bibleVerse.textContent = "-Psalm 1:3";
+  }, 0);
+  setTimeout(() => {
+    bibleText.textContent = `I rejoiced with those who said to me, 'Let us go to the house of the Lord.'`;
+    bibleVerse.textContent = "-Psalm 122:1";
+  }, 4000);
+}
+bibleTextChange();
+setInterval(bibleTextChange, 4000);
 
 
 

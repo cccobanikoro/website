@@ -436,6 +436,9 @@
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
   }
@@ -547,6 +550,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -592,6 +598,9 @@
   .max-w-80 {
     max-width: calc(var(--spacing) * 80);
   }
+  .max-w-\[0px\] {
+    max-width: 0px;
+  }
   .max-w-\[60ch\] {
     max-width: 60ch;
   }
@@ -600,6 +609,12 @@
   }
   .max-w-\[90\%\] {
     max-width: 90%;
+  }
+  .max-w-\[200px\] {
+    max-width: 200px;
+  }
+  .max-w-\[350px\] {
+    max-width: 350px;
   }
   .max-w-\[400px\] {
     max-width: 400px;
@@ -2424,6 +2439,10 @@ footer .link-hover {
 }
 footer .link-hover:hover {
   color: var(--accent-color);
+}
+footer .social-icons:hover {
+  translate: scale(1.2);
+  transition: translate .7s ease;
 }
 @media (min-width: 790px) {
   .hero-h1 {

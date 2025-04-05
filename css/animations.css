@@ -96,6 +96,18 @@
   animation-delay: 0.9s;
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
+}
+
 /*32 img carousel*/
 @keyframes adultSlider {
   0% {
@@ -117,15 +129,6 @@
 
 .adult-slider {
   animation: adultSlider 80s linear infinite;
-}
-
-@keyframes animateMultipleText {
-  40%, 60% {
-    left: calc(100% + 4px);
-  }
-  100% {
-    left: 0%;
-  }
 }
 
 /*Img slider for 20 images*/
