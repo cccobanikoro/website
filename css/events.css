@@ -5,7 +5,9 @@
   object-fit: cover;
   cursor: pointer;
 }
-
+.events-section-1{
+  background-color: var(--accent-color);
+}
 @media (min-width: 640px) {
   .event-grid {
     display: grid;
