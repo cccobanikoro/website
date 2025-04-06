@@ -126,6 +126,7 @@ body.no-scroll {
   }
   .navbar-menu a {
     color: var(--text-color);
+    font-size: 17px;
   }
   .navbar-menu a:hover {
     transition: color .5s;
