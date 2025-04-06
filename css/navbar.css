@@ -43,6 +43,7 @@ a.active {
   cursor: pointer;
   padding-right: 2vw;
 }
+
 .navbar-menu a:hover {
   transition: color .5s;
   color: var(--accent-color);
@@ -90,7 +91,7 @@ a.active {
 .navbar-menu a {
   display: block;
   padding: 0.8em;
-  font-size: 17px;
+  font-size: 20px;
 }
 #nav-toggle:checked ~ .navbar-menu {
   display: block;
