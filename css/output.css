@@ -400,6 +400,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
@@ -2376,27 +2379,24 @@ html {
   background-color: var(--off-white);
   color: var(--text-color);
 }
-.index-about-section {
+.index-about-section, .index-choir-section, .index-sunday-sch-section {
   background: var(--off-white);
   margin: 0 auto;
 }
-.index-about-section > div {
+.index-about-section > div, .index-choir-section > div, .index-sunday-sch-section > div {
   overflow-x: hidden;
 }
-.index-about-section h2 {
+.index-about-section h2, .index-choir-section h2, .index-sunday-sch-section h2 {
   display: inline-block;
   position: relative;
 }
-.index-about-section h2::after {
+.index-about-section h2::after, .index-choir-section h2::after, .index-sunday-sch-section h2::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   border-top: 3px solid var(--primary-color);
-}
-.index-about-section img {
-  max-width: 400px;
 }
 .index-about-section .about-link-btn {
   padding: .8em 1.6em;
@@ -2409,7 +2409,7 @@ html {
   opacity: .8;
 }
 .index-gallery-section {
-  background: var(--accent-color);
+  background: var(--off-white);
 }
 .index-gallery-section .img-div {
   width: 80%;
@@ -2420,10 +2420,9 @@ html {
 }
 .index-gallery-section .img-div img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   cursor: pointer;
-}
-.index-gallery-section .p-text {
-  font-weight: 300;
 }
 .index-gallery-section button {
   background: var(--primary-color);

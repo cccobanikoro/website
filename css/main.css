@@ -72,20 +72,20 @@ html {
   color: var(--text-color);
 }
 
-/*Index-About-Section*/
-.index-about-section {
+/*Index-About-Section, Index-Choir-Section, Index-Sunday-School-Section*/
+.index-about-section, .index-choir-section, .index-sunday-sch-section {
   background: var(--off-white);
   margin: 0 auto;
 }
-.index-about-section > div {
+.index-about-section > div, .index-choir-section > div, .index-sunday-sch-section > div {
   overflow-x: hidden;
 }
 
-.index-about-section h2 {
+.index-about-section h2, .index-choir-section h2, .index-sunday-sch-section h2 {
   display: inline-block;
   position: relative;
 }
-.index-about-section h2::after {
+.index-about-section h2::after, .index-choir-section h2::after, .index-sunday-sch-section h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -93,10 +93,9 @@ html {
   width: 100%;
   border-top: 3px solid var(--primary-color);
 }
-.index-about-section img {
-  max-width: 400px;
+.index-about-section img, .index-choir-section img, .index-sunday-sch-section img {
+  /* max-width: 400px; */
 }
-
 .index-about-section .about-link-btn {
   padding: .8em 1.6em;
   background-color: #1447E6;
@@ -110,7 +109,7 @@ html {
 
 /*Index-Gallery-Section*/
 .index-gallery-section {
-  background: var(--accent-color);
+  background: var(--off-white);
 }
 .index-gallery-section .img-div {
   width: 80%;
@@ -121,10 +120,9 @@ html {
 }
 .index-gallery-section .img-div img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   cursor: pointer;
-}
-.index-gallery-section .p-text {
-  font-weight: 300;
 }
 .index-gallery-section button {
   background: var(--primary-color);

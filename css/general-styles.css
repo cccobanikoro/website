@@ -12,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-height: 100dvh;
   overflow-x: hidden;
+  perspective: 1px;
 }
 h1 {
   font-size: 36px;
@@ -59,11 +60,11 @@ button {
   color: var(--off-white);
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: border-radius 0.3s ease, opacity 0.3s ease;
 }
 button:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color );
+  border-radius: 7px;
+  opacity: .8;
 }
 /*  This used for headings with a border bottom
 .index-about-section h2 {
