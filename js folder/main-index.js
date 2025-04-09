@@ -12,14 +12,13 @@ const bibleTextChange = () => {
     bibleText.textContent = `I rejoiced with those who said to me, 'Let us go to the house of the Lord.'`;
     bibleVerse.textContent = "-Psalm 122:1";
   }, 4000);
+  setTimeout(() => {
+    bibleText.textContent = 'Christ is the head of the church, which is his body.';
+    bibleVerse.textContent = "-Colossians 1:18";
+  }, 8000);
 }
 bibleTextChange();
-setInterval(bibleTextChange, 4000);
-
-
-
-
-
+setInterval(bibleTextChange, 12000);
 
 /*
 const text = document.getElementById('text-h2');
