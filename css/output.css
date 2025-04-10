@@ -406,6 +406,9 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
+  .mt-9 {
+    margin-top: calc(var(--spacing) * 9);
+  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
@@ -531,6 +534,9 @@
   }
   .h-\[140px\] {
     height: 140px;
+  }
+  .h-\[270px\] {
+    height: 270px;
   }
   .h-dvh {
     height: 100dvh;
@@ -2428,8 +2434,20 @@ html {
   background: var(--primary-color);
   color: var(--off-white);
 }
-.index-info-section {
+.index-event-section {
   background-color: var(--off-white);
+}
+.index-event-section .images-events {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  place-items: center;
+  max-width: 1200px;
+}
+.index-event-section .images-events img {
+  object-fit: contain;
 }
 footer {
   background: var(--primary-color);
