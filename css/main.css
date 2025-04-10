@@ -81,11 +81,11 @@ html {
   overflow-x: hidden;
 }
 
-.index-about-section h2, .index-choir-section h2, .index-sunday-sch-section h2 {
+.index-about-section h2, .index-choir-section h2, .index-sunday-sch-section h2, .index-gallery-section h2, .index-event-section h2 {
   display: inline-block;
   position: relative;
 }
-.index-about-section h2::after, .index-choir-section h2::after, .index-sunday-sch-section h2::after {
+.index-about-section h2::after, .index-choir-section h2::after, .index-sunday-sch-section h2::after, .index-gallery-section h2::after, .index-event-section h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -114,11 +114,11 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  place-items: center;
 }
 .index-gallery-section .img-div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 270px;
+  height: 300px;
   cursor: pointer;
 }
 .index-gallery-section button {
@@ -128,7 +128,20 @@ html {
 
 /*Index-event-Section*/
 .index-event-section {
-  background-color: var(--off-white);
+  color: var(--off-white);
+  position: relative;
+  width: 100%;
+  overflow: hidden
+}
+.index-event-section #background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  filter: brightness(40%);
 }
 .index-event-section .images-events {
   width: 90%;
@@ -140,7 +153,7 @@ html {
   max-width: 1200px;
 }
 .index-event-section .images-events img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*Footer*/
