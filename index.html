@@ -68,11 +68,11 @@
     <!--About Section-->
     <section class="index-about-section px-[5vw] pt-14 pb-8 mx-auto md:flex md:items-center">
 
-      <div class="mb-6 md:mb-0 max-w-[490px]">
-        <img src="./images/congregation/bg3.jpg">
+      <div class="mb-6 md:mb-0 max-w-[490px] mx-auto">
+        <img src="./images/congregation/bg3.jpg" class="reveal-img">
       </div>
 
-      <div class="md:ml-14">
+      <div class="md:ml-14 max-w-[490px] mx-auto">
         <h2 class="uppercase mb-6">
           who we are 
         </h2>
@@ -116,13 +116,13 @@
     </section>
 
     <!--Choir Section-->
-    <section class="index-choir-section px-[5vw] pt-14 pb-8 md:mx-auto md:flex md:items-center md:">
+    <section class="index-choir-section px-[5vw] pt-14 pb-8 mx-auto md:flex md:items-center">
 
-      <div class="mb-6 md:mb-0">
+      <div class="mb-6 md:mb-0 max-w-[490px] mx-auto">
         <img src="./images/choir/c49.jpg">
       </div>
 
-      <div class="md:ml-14">
+      <div class="md:ml-14 max-w-[490px] mx-auto">
         <h2 class="uppercase mb-6">
           The church choir 
         </h2>
@@ -143,13 +143,13 @@
     </section>
 
     <!--Sunday Sch section-->
-    <section class="index-sunday-sch-section px-[5vw] pt-14 pb-8 md:mx-auto md:flex md:items-center md:">
+    <section class="index-sunday-sch-section px-[5vw] pt-14 pb-8 mx-auto md:flex md:items-center">
 
-      <div class="mb-6 md:mb-0">
+      <div class="mb-6 md:mb-0 max-w-[490px] mx-auto">
         <img src="./images/sunday-sch/s11.jpg">
       </div>
 
-      <div class="md:ml-14">
+      <div class="md:ml-14 max-w-[490px] mx-auto">
         <h2 class="uppercase mb-6">
           the Sunday school 
         </h2>
@@ -184,9 +184,16 @@
         <!--Event #1-->
         <div>
           <h3 class="uppercase mb-1">APR 19</h3>
-          <div>
+          <div class="image-container">
             <a href="./events/kids-praise.html">
               <img src="./images/kids-praise/p11.jpg" alt="Kid's Praise" class="w-[270px] h-[270px]">
+              <div class="content">
+                <h3 class="capitalize mb-3">When Kids Praise</h3>
+                <p>An event where kids and teen worship</p>
+                <button class="capitalize ">
+                  <a href="./events/kids-praise.html">Learn More</a>
+                </button>
+              </div>
             </a>
           </div>
         </div>
@@ -194,9 +201,16 @@
         <!--Event #2-->
         <div>
           <h3 class="uppercase mb-1">May 11</h3>
-          <div>
+          <div class="image-container">
             <a href="./events/cantata.html">
               <img src="./images/cantata/c3.jpg" alt="Cantata" class="w-[270px] h-[270px]">
+              <div class="content">
+                <h3 class="capitalize mb-3">Cantata</h3>
+                <p>A festival of songs</p>
+                <button class="capitalize ">
+                  <a href="./events/cantata.html">Learn More</a>
+                </button>
+              </div>
             </a>
           </div>
         </div>
@@ -204,9 +218,16 @@
         <!--Event #3-->
         <div>
           <h3 class="uppercase mb-1">Jun 1</h3>
-          <div>
+          <div class="image-container">
             <a href="./events/juvenile.html">
               <img src="./images/ccc-juvenile/j15.jpg" alt="Juvenile harvest" class="w-[270px] h-[270px]">
+              <div class="content">
+                <h3 class="capitalize mb-3">Juvenile Harvest</h3>
+                <p>An event </p>
+                <button class="capitalize ">
+                  <a href="./events/juvenile.html">Learn More</a>
+                </button>
+              </div>
             </a>
           </div>
         </div>
@@ -214,9 +235,16 @@
         <!--Event #4-->
         <div>
           <h3 class="uppercase mb-1">Oct 12</h3>
-          <div>
+          <div class="image-container">
             <a href="./events/adult-harvest.html">
               <img src="./images/congregation/bg1.jpg" alt="Adult harvest" class="w-[270px] h-[270px]">
+              <div class="content">
+                <h3 class="capitalize mb-3">Adult Harvest</h3>
+                <p>An event </p>
+                <button class="capitalize ">
+                  <a href="./events/adult-harvest.html">Learn More</a>
+                </button>
+              </div>
             </a>
           </div>
         </div>
@@ -233,29 +261,36 @@
   </main>
 
   <!--Footer and Copyright-->
-  <footer class="px-[5vw] pb-14 relative flex flex-col gap-9 items-center text-center mt-10">
+  <footer class="px-[5vw] pb-14 relative flex flex-col gap-9 items-center text-center mt-10 sm:text-left">
 
-    <div class="sm:flex">
+    <div class="sm:flex items-baseline">
 
       <div class="pt-10">
         <a href="./index.html" class="logo flex gap-2 items-center mb-3">
           <img src="./images/ccc-logo.png" alt="" class="logo-img">
-          <p class="logo-name">CCC Obanikoro Cathedral </p>
+          <p class="logo-name">CCC Obanikoro Cathedral</p>
         </a>
   
         <div class="contact-info">        
-          <a href="mailto:cccobanikoro@gmail.com" class="flex mb-3 gap-2 justify-center items-center link-hover">
+          <a href="mailto:cccobanikoro@gmail.com" class="flex mb-3 gap-2 justify-center items-center link-hover sm:justify-normal">
             <p>
               <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
             </p>
             <p>cccobanikoro@gmail.com</p>
           </a>
   
-          <a href="tel:+2348032270565" class="flex gap-2 justify-center items-center link-hover">
+          <a href="tel:+2348032270565" class="flex gap-2 justify-center items-center link-hover mb-3 sm:justify-normal">
             <p>
               <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
             </p>
             <p>+2348032270565</p>
+          </a>
+
+          <a href="tel:+2348038871986" class="flex gap-2 justify-center items-center link-hover sm:justify-normal">
+            <p>
+              <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+            </p>
+            <p>+2348038871986</p>
           </a>
         </div>
   
