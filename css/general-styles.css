@@ -66,6 +66,24 @@ button:hover {
   border-radius: 7px;
   opacity: .8;
 }
+.reveal-img {
+  scale: .8;
+  opacity: 0;
+  animation: fade-in-img linear forwards;
+  animation-timeline: view();
+  animation-range: entry 100px;
+  transition: animation 1s;
+}
+@keyframes fade-in-img {
+  from {
+    scale: .8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
 /*  This used for headings with a border bottom
 .index-about-section h2 {
   display: inline-block;
