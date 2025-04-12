@@ -20,30 +20,20 @@ const bibleTextChange = () => {
 bibleTextChange();
 setInterval(bibleTextChange, 12000);
 
-/*
-const text = document.getElementById('text-h2');
-const imgAltar = document.getElementById('altar');
+//Reveal elements on scroll
+window.addEventListener('scroll', reveal);
+function reveal() {
+  let reveals = document.querySelectorAll('.reveal');
+  
+  for (let i = 0; index < reveals.length; i++) {
+    let windowheight = window.innerHeight;
+    let revealtop = reveals[i].getBoundingClientRect().top;
+    let revealpoint = 150;
 
-window.addEventListener('scroll', () => {
-  let value = window.scrollY;
-
-  text.style.marginTop = value * 1.5 + 'px';
-}); */
-
-/*
-const typingText = document.querySelector(".sec-text");
-
-const textLoad = () => {
-  setTimeout(() => {
-    typingText.textContent = "WORSHIP";
-  }, 0);
-  setTimeout(() => {
-    typingText.textContent = "COMMUNITY";
-  }, 4000);
-  setTimeout(() => {
-    typingText.textContent = "SERVICE";
-  }, 8000);
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('active');
+    } else {
+      reveals[i].classList.remove('active');
+    }
+  }
 }
-textLoad();
-setInterval(textLoad, 12000);
-*/

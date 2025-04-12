@@ -84,6 +84,18 @@ button:hover {
     opacity: 1;
   }
 }
+/*Reveal elements on scroll*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /*  This used for headings with a border bottom
 .index-about-section h2 {
   display: inline-block;
