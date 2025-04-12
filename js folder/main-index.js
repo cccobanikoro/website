@@ -22,18 +22,21 @@ setInterval(bibleTextChange, 12000);
 
 //Reveal elements on scroll
 window.addEventListener('scroll', reveal);
-function reveal() {
-  let reveals = document.querySelectorAll('.reveal');
-  
-  for (let i = 0; index < reveals.length; i++) {
-    let windowheight = window.innerHeight;
-    let revealtop = reveals[i].getBoundingClientRect().top;
-    let revealpoint = 150;
+    window.addEventListener('load', reveal); // Also reveal on page load
 
-    if (revealtop < windowheight - revealpoint) {
-      reveals[i].classList.add('active');
-    } else {
-      reveals[i].classList.remove('active');
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
     }
-  }
-}
+

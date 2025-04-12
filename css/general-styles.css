@@ -86,14 +86,13 @@ button:hover {
 }
 /*Reveal elements on scroll*/
 .reveal {
-  position: relative;
-  transform: translateY(150px);
   opacity: 0;
+  transform: translateY(150px);
   transition: all 2s ease;
 }
 .reveal.active {
-  transform: translateY(0px);
   opacity: 1;
+  transform: translateY(0);
 }
 
 /*  This used for headings with a border bottom

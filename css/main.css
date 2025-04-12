@@ -181,9 +181,6 @@ html {
 .index-event-section .image-container:hover .content {
   opacity: 1;
 }
-.index-event-section .image-container:hover .imkage {
-  opacity: 0.7;
-}
 
 /*Footer*/
 footer {
