@@ -1,6 +1,7 @@
 :root {
   --off-white: #FAFAFA; /* Off-white for body-bg*/
   --text-color: #1A1A1A; /*Soft-black color */
+  --black-color: #1A1A1A; /*Soft-black color */
   --primary-color: #1447E6; /* Blue color */
   --accent-color: #D3D3D3; /*Light gray color */
   --text-size: 17px;
@@ -11,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-height: 100dvh;
   overflow-x: hidden;
+  perspective: 1px;
 }
 h1 {
   font-size: 36px;
@@ -26,8 +28,15 @@ h2 {
   line-height: 1.4;
   word-spacing: 2px;
 }
-h3, h4, h5 {
-  font-size: 22px;
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  word-spacing: 2px;
+}
+h4, h5 {
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.5px;
   line-height: 1.4;
@@ -35,10 +44,11 @@ h3, h4, h5 {
 }
 p {
   font-size: var(--text-size);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -.5px;
-  line-height: 1.4;
+  line-height: 1.5;
   word-spacing: 1px;
+  max-width: 60ch;
 }
 main {
   position: relative;
@@ -50,11 +60,67 @@ button {
   color: var(--off-white);
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: border-radius 0.3s ease, opacity 0.3s ease;
 }
 button:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color );
+  border-radius: 7px;
+  opacity: .8;
+}
+.reveal-img {
+  scale: .8;
+  opacity: 0;
+  animation: fade-in-img linear forwards;
+  animation-timeline: view();
+  animation-range: entry 100px;
+  transition: animation 1s;
+}
+@keyframes fade-in-img {
+  from {
+    scale: .8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+/*Reveal elements on scroll*/
+/* .reveal {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: reveal-elements 2s ease;
+} */
+
+@keyframes fadeInUpElements {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal {
+  /* animation-duration: 2s; */
+  animation-delay: 3s;
+  animation-name: fadeInUpElements;
+  animation-fill-mode: both;
+  animation-timeline: view();
+  animation-range: entry 40% cover 30%;
 }
 
+/*  This used for headings with a border bottom
+.index-about-section h2 {
+  display: inline-block;
+  position: relative;
+}
+.index-about-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 3px solid var(--primary-color);
+}
+*/

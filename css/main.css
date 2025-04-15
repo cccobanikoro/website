@@ -60,55 +60,53 @@ html {
   justify-content: center;
   gap: 30px;
 }
-.cta-button {
+.index-hero-section .cta-button {
   padding: .8em 1.6em;
   background-color: #1447E6;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: border-radius 0.3s ease, background-color 0.3s ease;
 }
-.cta-button:hover {
+.index-hero-section .cta-button:hover {
+  border-radius: 7px;
   background-color: var(--off-white);
   color: var(--text-color);
 }
-.index-h1{
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Raleway", arial;
+
+/*Index-About-Section, Index-Choir-Section, Index-Sunday-School-Section*/
+.index-about-section, .index-choir-section, .index-sunday-sch-section {
+  background: var(--off-white);
+  margin: 0 auto;
+}
+.index-about-section > div, .index-choir-section > div, .index-sunday-sch-section > div {
+  overflow-x: hidden;
 }
 
-/*Index-About-Section*/
-.index-about-section {
-  background: var(--off-white);
+.index-about-section h2, .index-choir-section h2, .index-sunday-sch-section h2, .index-gallery-section h2, .index-event-section h2 {
+  display: inline-block;
+  position: relative;
 }
-.index-about-section h2 {
-  color: var(--primary-color);
+.index-about-section h2::after, .index-choir-section h2::after, .index-sunday-sch-section h2::after, .index-gallery-section h2::after, .index-event-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 3px solid var(--primary-color);
 }
-.text-btn-div {
-  box-shadow: 0 8px 10px var(--accent-color),
-                      0 -8px 10px var(--accent-color),
-                      8px 0 10px var(--accent-color),
-                      -8px 0 10px var(--accent-color);
+.index-about-section .about-link-btn {
+  padding: .8em 1.6em;
+  background-color: #1447E6;
+  color: white;
+  transition: border-radius 0.3s ease, opacity 0.3s ease;
 }
-.text-btn-div .text-1 {
-  font-size: 18px;
-}
-.text-btn-div .text-2 {
-  font-weight: 300;
-}
-.text-btn-div button {
-  background-color: var(--primary-color);
-  color: (--text-color);
-}
-.text-btn-div button:hover, .index-gallery-section button:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color);
+.index-about-section .about-link-btn:hover {
+  border-radius: 7px;
+  opacity: .8;
 }
 
 /*Index-Gallery-Section*/
 .index-gallery-section {
-  background: var(--accent-color);
+  background: var(--off-white);
 }
 .index-gallery-section .img-div {
   width: 80%;
@@ -116,23 +114,72 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  place-items: center;
 }
 .index-gallery-section .img-div img {
-  width: 100%;
+  width: 270px;
+  height: 300px;
   cursor: pointer;
-  aspect-ratio: 1 / 1;
-}
-.index-gallery-section .p-text {
-  font-weight: 300;
 }
 .index-gallery-section button {
   background: var(--primary-color);
   color: var(--off-white);
 }
 
-/*Index-Info-Section*/
-.index-info-section {
+/*Index-event-Section*/
+.index-event-section {
+  color: var(--off-white);
+  position: relative;
+  width: 100%;
+  overflow: hidden
+}
+.index-event-section #background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  filter: brightness(40%);
+}
+.index-event-section .images-events {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  place-items: center;
+  max-width: 1200px;
+}
+.index-event-section .images-events img {
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+.index-event-section .image-container {
+  position: relative;
+  display: inline-block;
+}
+.index-event-section .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--off-white);
+  color: var(--text-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.index-event-section .image-container:hover .content {
+  opacity: 1;
 }
 
 /*Footer*/

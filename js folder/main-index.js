@@ -12,39 +12,41 @@ const bibleTextChange = () => {
     bibleText.textContent = `I rejoiced with those who said to me, 'Let us go to the house of the Lord.'`;
     bibleVerse.textContent = "-Psalm 122:1";
   }, 4000);
-}
-bibleTextChange();
-setInterval(bibleTextChange, 4000);
-
-
-
-
-
-
-/*
-const text = document.getElementById('text-h2');
-const imgAltar = document.getElementById('altar');
-
-window.addEventListener('scroll', () => {
-  let value = window.scrollY;
-
-  text.style.marginTop = value * 1.5 + 'px';
-}); */
-
-/*
-const typingText = document.querySelector(".sec-text");
-
-const textLoad = () => {
   setTimeout(() => {
-    typingText.textContent = "WORSHIP";
-  }, 0);
-  setTimeout(() => {
-    typingText.textContent = "COMMUNITY";
-  }, 4000);
-  setTimeout(() => {
-    typingText.textContent = "SERVICE";
+    bibleText.textContent = 'Christ is the head of the church, which is his body.';
+    bibleVerse.textContent = "-Colossians 1:18";
   }, 8000);
 }
-textLoad();
-setInterval(textLoad, 12000);
+bibleTextChange();
+setInterval(bibleTextChange, 12000);
+
+//Reveal elements on scroll
+
+/*
+window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal); // Also reveal on page load
+
+  function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 300;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('load', () => {
+    setTimeout(reveal, 200); // Give layout time to settle
+  });
+
+  console.log('Scroll event fired');
+  console.log(reveal);
+
 */
