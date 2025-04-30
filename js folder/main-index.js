@@ -18,7 +18,7 @@ const bibleTextChange = () => {
   }, 8000);
 }
 bibleTextChange();
-setInterval(bibleTextChange, 12000);
+setInterval(bibleTextChange, 12000); 
 
 //Reveal elements on scroll
 
