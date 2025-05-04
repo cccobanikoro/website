@@ -205,6 +205,9 @@ footer .social-icons:hover {
   .hero-h1 {
     font-size: 40px;
   }
+  #index-bible-text1, #index-bible-text2 {
+    font-size: 20px;
+  }
 }
 
 /*

@@ -2142,11 +2142,6 @@
       margin-bottom: calc(var(--spacing) * 16);
     }
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
@@ -2511,6 +2506,9 @@ footer .social-icons:hover {
 @media (min-width: 790px) {
   .hero-h1 {
     font-size: 40px;
+  }
+  #index-bible-text1, #index-bible-text2 {
+    font-size: 20px;
   }
 }
 @property --tw-translate-x {
