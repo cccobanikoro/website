@@ -131,7 +131,6 @@ html {
   color: var(--off-white);
   position: relative;
   width: 100%;
-  overflow: hidden
 }
 .index-event-section #background-video {
   position: absolute;
@@ -188,7 +187,7 @@ footer {
   color: var(--off-white);
 }
 footer .logo-img {
-  width: 4rem;
+  width: 5.5rem;
 }
 footer .link-hover {
   transition: color .2s ease;
