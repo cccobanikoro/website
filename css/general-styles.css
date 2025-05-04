@@ -48,7 +48,6 @@ p {
   letter-spacing: -.5px;
   line-height: 1.5;
   word-spacing: 1px;
-  max-width: 60ch;
 }
 main {
   position: relative;
