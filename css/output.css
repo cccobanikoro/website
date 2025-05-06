@@ -2339,6 +2339,11 @@
       display: flex;
     }
   }
+  .lg\:max-w-\[80\%\] {
+    @media (width >= 64rem) {
+      max-width: 80%;
+    }
+  }
   .lg\:items-stretch {
     @media (width >= 64rem) {
       align-items: stretch;
