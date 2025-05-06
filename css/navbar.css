@@ -113,7 +113,7 @@ body.no-scroll {
     font-size: 19px;
   }
 }
-@media (min-width: 892px) {
+@media (min-width: 952px) {
   .navbar-burger {
     display: none;
   }
