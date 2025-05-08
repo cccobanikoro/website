@@ -1029,12 +1029,6 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-  .gap-9 {
-    gap: calc(var(--spacing) * 9);
-  }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
@@ -1491,9 +1485,6 @@
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
-  }
-  .pt-4 {
-    padding-top: calc(var(--spacing) * 4);
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -2225,11 +2216,6 @@
       justify-content: space-between;
     }
   }
-  .sm\:justify-normal {
-    @media (width >= 40rem) {
-      justify-content: normal;
-    }
-  }
   .sm\:gap-2 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 2);
@@ -2314,6 +2300,11 @@
       display: flex;
     }
   }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
+    }
+  }
   .md\:max-w-160 {
     @media (width >= 48rem) {
       max-width: calc(var(--spacing) * 160);
@@ -2322,6 +2313,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:place-items-center {
+    @media (width >= 48rem) {
+      place-items: center;
     }
   }
   .md\:items-center {
@@ -2354,29 +2350,9 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mb-1 {
-    @media (width >= 64rem) {
-      margin-bottom: calc(var(--spacing) * 1);
-    }
-  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
-    }
-  }
-  .lg\:flex-row {
-    @media (width >= 64rem) {
-      flex-direction: row;
-    }
-  }
-  .lg\:items-baseline {
-    @media (width >= 64rem) {
-      align-items: baseline;
-    }
-  }
-  .lg\:items-start {
-    @media (width >= 64rem) {
-      align-items: flex-start;
     }
   }
   .lg\:items-stretch {
@@ -2392,11 +2368,6 @@
   .lg\:justify-normal {
     @media (width >= 64rem) {
       justify-content: normal;
-    }
-  }
-  .lg\:gap-2 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 2);
     }
   }
   .lg\:pt-0 {
@@ -2605,6 +2576,9 @@ footer .social-icons:hover {
     font-size: 40px;
   }
   #index-bible-text1, #index-bible-text2 {
+    font-size: 20px;
+  }
+  footer p.logo-name {
     font-size: 20px;
   }
 }
