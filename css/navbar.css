@@ -91,7 +91,7 @@ a.active {
 .navbar-menu a {
   display: block;
   padding: 0.8em;
-  font-size: 20px;
+  font-size: var(--text-big);
 }
 #nav-toggle:checked ~ .navbar-menu {
   display: block;
@@ -110,7 +110,7 @@ body.no-scroll {
 }
 @media (min-width: 590px) {
   .header .logo-name {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 @media (min-width: 952px) {

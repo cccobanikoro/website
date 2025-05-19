@@ -31,12 +31,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -412,9 +406,6 @@
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
   .mt-9 {
     margin-top: calc(var(--spacing) * 9);
   }
@@ -426,9 +417,6 @@
   }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
-  }
-  .mt-\[2px\] {
-    margin-top: 2px;
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -459,9 +447,6 @@
   }
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
-  }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
   }
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
@@ -576,9 +561,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1597,18 +1579,6 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -1618,13 +1588,6 @@
   }
   .text-\[19px\] {
     font-size: 19px;
-  }
-  .text-\[50px\] {
-    font-size: 50px;
-  }
-  .leading-\[1\] {
-    --tw-leading: 1;
-    line-height: 1;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1723,20 +1686,8 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-\[3o\] {
-    color: 3o;
-  }
-  .text-\[3xl\] {
-    color: 3xl;
-  }
-  .text-\[33\] {
-    color: 33;
-  }
   .text-black {
     color: var(--color-black);
-  }
-  .text-blue-500 {
-    color: var(--color-blue-500);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -2361,6 +2312,11 @@
       max-width: calc(var(--spacing) * 160);
     }
   }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -2524,6 +2480,7 @@ html {
 }
 .index-gallery-section {
   background: var(--off-white);
+  pointer-events: none;
 }
 .index-gallery-section .img-div {
   width: 80%;
@@ -2534,9 +2491,10 @@ html {
   place-items: center;
 }
 .index-gallery-section .img-div img {
-  width: 270px;
-  height: 300px;
+  object-fit: cover;
   cursor: pointer;
+  width: 340px;
+  height: 320px;
 }
 .index-gallery-section button {
   background: var(--primary-color);
@@ -2617,10 +2575,16 @@ footer .social-icons:hover {
     font-size: 40px;
   }
   #index-bible-text1, #index-bible-text2 {
-    font-size: 20px;
+    font-size: var(--text-big);
   }
   footer p.logo-name {
-    font-size: 20px;
+    font-size: var(--text-big);
+  }
+}
+@media (min-width: 360px) {
+  .index-gallery-section .img-div img {
+    width: 340px;
+    height: 320px;
   }
 }
 @property --tw-translate-x {

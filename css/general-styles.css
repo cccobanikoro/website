@@ -5,6 +5,7 @@
   --primary-color: #1447E6; /* Blue color */
   --accent-color: #D3D3D3; /*Light gray color */
   --text-size: 17px;
+  --text-big: 20px;
 }
 body {
   background-color: var(--off-white);

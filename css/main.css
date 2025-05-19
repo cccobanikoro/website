@@ -107,6 +107,7 @@ html {
 /*Index-Gallery-Section*/
 .index-gallery-section {
   background: var(--off-white);
+  pointer-events: none;
 }
 .index-gallery-section .img-div {
   width: 80%;
@@ -117,9 +118,10 @@ html {
   place-items: center;
 }
 .index-gallery-section .img-div img {
-  width: 270px;
-  height: 300px;
+  object-fit: cover;
   cursor: pointer;
+  width: 340px;
+  height: 320px;
 }
 .index-gallery-section button {
   background: var(--primary-color);
@@ -205,36 +207,21 @@ footer .social-icons:hover {
     font-size: 40px;
   }
   #index-bible-text1, #index-bible-text2 {
-    font-size: 20px;
+    font-size: var(--text-big);
   }
   footer p.logo-name {
-    font-size: 20px;
+    font-size: var(--text-big);
   }
 }
+@media (min-width: 360px) {
+  .index-gallery-section .img-div img {
+    width: 340px;
+    height: 320px;
+  }
+}
+@media (min-width: px) {
 
-/*
-.textContainer {
-  overflow-x: hidden;
 }
-.textContainer .typing-text {
-  position: relative;
-  text-wrap: nowrap;
-  font-size: ;
-  font-weight: ;
-  color: ;
+@media (min-width: px) {
+
 }
-.textContainer .typing-text.first-text {
-  color: ;
-}
-.textContainer .typing-text.sec-text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-left: 3px solid ;
-  animation: animateMultipleText 4s steps(12) infinite;
-  background-color: ;
-}
-*/
