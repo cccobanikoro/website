@@ -1,22 +1,39 @@
+.body-event {
+  scroll-behavior: smooth;
+}
 .event-img {
   width: 100%;
-  height: auto;
+  height: 45vh;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   cursor: pointer;
 }
-.events-section-1{
-  background-color: var(--accent-color);
+.btn-events {
+  color: #1447e6;
+  border: 2px solid #fafafa;
+  border-radius: 5px;
 }
 @media (min-width: 640px) {
   .event-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: stretch; 
+    margin: 0 auto;
+    align-items: stretch;
+    max-width: 660px;
+  }
+  .event-grid article {
+    margin: 0 auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 964px) {
   .event-grid {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 990px;
+  }
+}
+@media (min-width: 1294px) {
+  .event-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1290px;
   }
 }

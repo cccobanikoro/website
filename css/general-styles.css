@@ -15,6 +15,13 @@ body {
   overflow-x: hidden;
   perspective: 1px;
 }
+.bg-offwhite {
+  background: var(--off-white);
+}
+.bg-blue {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
 h1 {
   font-size: 36px;
   font-weight: 700;
