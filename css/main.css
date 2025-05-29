@@ -131,8 +131,8 @@ html {
   cursor: pointer;
 }
 .index-gallery-section button {
-  background: var(--primary-color);
-  color: var(--off-white);
+  background: var(--off-white);
+  color: var(--primary-color);
 }
 
 /*Index-event-Section*/
@@ -187,6 +187,10 @@ html {
 }
 .index-event-section .image-container:hover .content {
   opacity: 1;
+}
+.index-event-section button {
+  background: var(--off-white);
+  color: var(--primary-color);
 }
 
 /*Footer*/

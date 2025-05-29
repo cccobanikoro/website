@@ -19,7 +19,7 @@
 .header .logo {
   display: flex;
   align-items: center;
-  gap: 5\px;
+  gap: 5px;
 }
 .header .logo-img {
   width: 4rem;
