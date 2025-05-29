@@ -528,6 +528,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-\[90dvh\] {
     height: 90dvh;
   }
