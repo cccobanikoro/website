@@ -15,15 +15,17 @@
 .scrolled-header {
   position: fixed;
   top: 0;
-  
 }
 .header .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5\px;
 }
 .header .logo-img {
   width: 4rem;
+}
+.header .logo-img:hover {
+  animation: rotate 1s ease;
 }
 .header .logo-name {
   font-size: 15px;
@@ -106,11 +108,6 @@ body.no-scroll {
 @media (max-width: 369px) {
   .header .logo-name {
     font-size: 14px;
-  }
-}
-@media (min-width: 590px) {
-  .header .logo-name {
-    font-size: 17px;
   }
 }
 @media (min-width: 952px) {

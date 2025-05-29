@@ -22,7 +22,7 @@ We also used Google fonts, Google icons and Fonts awesome.
 ## Team
 - [Mr Cayleb](https://github.com/070315129300)
 - [Semilore](https://github.com/AnjorinSemilore)
-- [Micheal](https://github.com/Micheal2code)
+- [Michael](https://github.com/Micheal2code)
 - [Ademuyiwa](https://github.com/codingat17)
 
 ## Got feedback for us?
