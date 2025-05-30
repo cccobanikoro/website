@@ -9,6 +9,7 @@
 @import url(./animations.css);
 @import url(./location.css);
 @import url(./service.css);
+@import url(./button.css);
 
 @import "tailwindcss";
 
@@ -60,16 +61,10 @@ html {
   justify-content: center;
   gap: 30px;
 }
-.index-hero-section .cta-button {
-  padding: .8em 1.6em;
-  background-color: #1447E6;
-  color: white;
-  transition: border-radius 0.3s ease, background-color 0.3s ease;
-}
-.index-hero-section .cta-button:hover {
-  border-radius: 7px;
-  background-color: var(--off-white);
-  color: var(--text-color);
+
+/*Index-About-Section*/
+.index-about-section {
+  border-radius: 30px 30px 0 0;
 }
 
 /*Index-About-Section, Index-Choir-Section, Index-Sunday-School-Section*/
@@ -104,21 +99,35 @@ html {
   opacity: .8;
 }
 
+/*Index-School-School-Section*/
+/* .index-sunday-sch-section {
+  background-color: var(--accent-color);
+} */
+
 /*Index-Gallery-Section*/
 .index-gallery-section {
-  background: var(--off-white);
+  position: relative;
+  color: var(--off-white);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(../images/sunday-service/Slate-blue-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  background-position: center;
 }
+
 .index-gallery-section .img-div {
   width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  place-items: center;
+  align-items: stretch;
 }
 .index-gallery-section .img-div img {
-  width: 270px;
-  height: 300px;
+  object-fit: cover;
   cursor: pointer;
 }
 .index-gallery-section button {
@@ -146,10 +155,9 @@ html {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   place-items: center;
-  max-width: 1200px;
 }
 .index-event-section .images-events img {
   object-fit: cover;
@@ -200,41 +208,54 @@ footer .social-icons:hover {
   transition: translate .7s ease;
 }
 
+@media (min-width: 601px) {
+  .index-event-section .images-events {
+    max-width: 580px; 
+  }
+}
+@media (min-width: 420px) and (max-width: 583px) {
+  .index-gallery-section .img-div {
+  width: 70%;
+  }
+}
 @media (min-width: 790px) {
   .hero-h1 {
     font-size: 40px;
   }
   #index-bible-text1, #index-bible-text2 {
-    font-size: 20px;
+    font-size: var(--text-big);
+  }
+  .index-about-section {
+    border-radius: 35px 35px 0 0;
+  }
+  .index-gallery-section .img-div {
+    /*max-width: ;*/
+  }
+  .index-gallery-section .img-div img {
+    width: 340px;
+    height: 320px;
   }
   footer p.logo-name {
-    font-size: 20px;
+    font-size: var(--text-big);
   }
 }
-
-/*
-.textContainer {
-  overflow-x: hidden;
+@media (min-width: 901px) {
+  .index-event-section .images-events {
+    max-width: 950px; 
+  }
 }
-.textContainer .typing-text {
-  position: relative;
-  text-wrap: nowrap;
-  font-size: ;
-  font-weight: ;
-  color: ;
+@media (min-width: 1070px) {
+  .index-event-section .images-events {
+    max-width: 1190px; 
+  }
 }
-.textContainer .typing-text.first-text {
-  color: ;
+@media (min-width: 768px) {
+  .index-about-section > div, .index-sunday-sch-section > div, .index-choir-section > div {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.textContainer .typing-text.sec-text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-left: 3px solid ;
-  animation: animateMultipleText 4s steps(12) infinite;
-  background-color: ;
+@media (min-width: 1110px) {
+  .index-about-section > div, .index-sunday-sch-section > div, .index-choir-section > div {
+    width: 1020px;
+  }
 }
-*/

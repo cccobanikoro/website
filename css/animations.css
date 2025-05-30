@@ -1,3 +1,11 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes slideLeft {
   from {
     transform: translateX(-900px);
@@ -20,6 +28,7 @@
 .animated-p3 {
   animation-delay: 7s;
 }
+
 @keyframes width {
   from {
     visibility: hidden;
@@ -36,6 +45,7 @@
   animation-range: entry 10% cover 30%;
   transition-duration: .7s;
 }
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -55,6 +65,7 @@
 .block-animation:hover {
   box-shadow: 10px 10px 10px , -8px -8px 8px ;
 }
+
 @keyframes typing {
   0% { width: 0; }
   50%,
@@ -73,8 +84,10 @@
   display: inline-block;
   border-right: 3px solid ;
   width: 0;
-  animation: typing 6s steps(15, end) infinite, blink 0.7s infinite;
+  animation: typing 7s steps(16, end) infinite, blink 0.7s infinite;
 }
+
+/*Elements right-sliding*/
 @keyframes slideRight {
   from {
     transform: translateX(900px);
@@ -96,6 +109,7 @@
   animation-delay: 0.9s;
 }
 
+/*Elements left-sliding*/
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);

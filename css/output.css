@@ -10,6 +10,7 @@
 @import url(./animations.css);
 @import url(./location.css);
 @import url(./service.css);
+@import url(./button.css);
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -20,13 +21,12 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-blue-500: oklch(0.623 0.214 259.815);
     --color-gray-50: oklch(0.985 0.002 247.839);
+    --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-700: oklch(0.373 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -36,7 +36,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-tighter: -0.05em;
-    --radius-md: 0.375rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -253,9 +252,6 @@
   .top-\[2\.5rem\] {
     top: 2.5rem;
   }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
   .right-\[5\%\] {
     right: 5%;
   }
@@ -273,9 +269,6 @@
   }
   .z-20 {
     z-index: 20;
-  }
-  .z-50 {
-    z-index: 50;
   }
   .z-auto {
     z-index: auto;
@@ -415,6 +408,12 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -436,17 +435,8 @@
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
   }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
-  }
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
-  }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
-  .ml-1\.5 {
-    margin-left: calc(var(--spacing) * 1.5);
   }
   .box-border {
     box-sizing: border-box;
@@ -535,6 +525,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-\[90dvh\] {
+    height: 90dvh;
+  }
   .h-\[140px\] {
     height: 140px;
   }
@@ -559,17 +552,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-\[2\.5\%\] {
     width: 2.5%;
-  }
-  .w-\[3\.5rem\] {
-    width: 3.5rem;
   }
   .w-\[5\%\] {
     width: 5%;
@@ -612,6 +599,9 @@
   }
   .max-w-\[90\%\] {
     max-width: 90%;
+  }
+  .max-w-\[290px\] {
+    max-width: 290px;
   }
   .max-w-\[400px\] {
     max-width: 400px;
@@ -1029,11 +1019,21 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1134,9 +1134,6 @@
   }
   .rounded {
     border-radius: 0.25rem;
-  }
-  .rounded-md {
-    border-radius: var(--radius-md);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1274,6 +1271,9 @@
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
@@ -1468,6 +1468,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -1485,12 +1488,6 @@
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
-  }
-  .pt-6 {
-    padding-top: calc(var(--spacing) * 6);
-  }
-  .pt-7 {
-    padding-top: calc(var(--spacing) * 7);
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -1571,10 +1568,6 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-\[15px\] {
     font-size: 15px;
@@ -2146,11 +2139,6 @@
       margin-top: calc(var(--spacing) * 7);
     }
   }
-  .sm\:mb-16 {
-    @media (width >= 40rem) {
-      margin-bottom: calc(var(--spacing) * 16);
-    }
-  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
@@ -2159,11 +2147,6 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
-    }
-  }
-  .sm\:w-\[4rem\] {
-    @media (width >= 40rem) {
-      width: 4rem;
     }
   }
   .sm\:max-w-\[80\%\] {
@@ -2290,39 +2273,19 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .md\:ml-14 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 14);
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
-    }
-  }
-  .md\:grid {
-    @media (width >= 48rem) {
-      display: grid;
-    }
-  }
   .md\:max-w-160 {
     @media (width >= 48rem) {
       max-width: calc(var(--spacing) * 160);
     }
   }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
-    }
-  }
-  .md\:place-items-center {
-    @media (width >= 48rem) {
-      place-items: center;
-    }
-  }
-  .md\:items-center {
-    @media (width >= 48rem) {
-      align-items: center;
     }
   }
   .md\:gap-2 {
@@ -2350,6 +2313,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .lg\:mb-3 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 3);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -2370,6 +2338,11 @@
       justify-content: normal;
     }
   }
+  .lg\:px-\[15vw\] {
+    @media (width >= 64rem) {
+      padding-inline: 15vw;
+    }
+  }
   .lg\:pt-0 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 0);
@@ -2378,11 +2351,6 @@
   .lg\:pt-10 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 10);
-    }
-  }
-  .lg\:pt-12 {
-    @media (width >= 64rem) {
-      padding-top: calc(var(--spacing) * 12);
     }
   }
   .lg\:pt-14 {
@@ -2441,16 +2409,8 @@ html {
   justify-content: center;
   gap: 30px;
 }
-.index-hero-section .cta-button {
-  padding: .8em 1.6em;
-  background-color: #1447E6;
-  color: white;
-  transition: border-radius 0.3s ease, background-color 0.3s ease;
-}
-.index-hero-section .cta-button:hover {
-  border-radius: 7px;
-  background-color: var(--off-white);
-  color: var(--text-color);
+.index-about-section {
+  border-radius: 30px 30px 0 0;
 }
 .index-about-section, .index-choir-section, .index-sunday-sch-section {
   background: var(--off-white);
@@ -2482,7 +2442,16 @@ html {
   opacity: .8;
 }
 .index-gallery-section {
-  background: var(--off-white);
+  position: relative;
+  color: var(--off-white);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(../images/sunday-service/Slate-blue-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  background-position: center;
 }
 .index-gallery-section .img-div {
   width: 80%;
@@ -2490,11 +2459,10 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  place-items: center;
+  align-items: stretch;
 }
 .index-gallery-section .img-div img {
-  width: 270px;
-  height: 300px;
+  object-fit: cover;
   cursor: pointer;
 }
 .index-gallery-section button {
@@ -2520,10 +2488,9 @@ html {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   place-items: center;
-  max-width: 1200px;
 }
 .index-event-section .images-events img {
   object-fit: cover;
@@ -2571,15 +2538,52 @@ footer .social-icons:hover {
   translate: scale(1.2);
   transition: translate .7s ease;
 }
+@media (min-width: 601px) {
+  .index-event-section .images-events {
+    max-width: 580px;
+  }
+}
+@media (min-width: 420px) and (max-width: 583px) {
+  .index-gallery-section .img-div {
+    width: 70%;
+  }
+}
 @media (min-width: 790px) {
   .hero-h1 {
     font-size: 40px;
   }
   #index-bible-text1, #index-bible-text2 {
-    font-size: 20px;
+    font-size: var(--text-big);
+  }
+  .index-about-section {
+    border-radius: 35px 35px 0 0;
+  }
+  .index-gallery-section .img-div img {
+    width: 340px;
+    height: 320px;
   }
   footer p.logo-name {
-    font-size: 20px;
+    font-size: var(--text-big);
+  }
+}
+@media (min-width: 901px) {
+  .index-event-section .images-events {
+    max-width: 950px;
+  }
+}
+@media (min-width: 1070px) {
+  .index-event-section .images-events {
+    max-width: 1190px;
+  }
+}
+@media (min-width: 768px) {
+  .index-about-section > div, .index-sunday-sch-section > div, .index-choir-section > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1110px) {
+  .index-about-section > div, .index-sunday-sch-section > div, .index-choir-section > div {
+    width: 1020px;
   }
 }
 @property --tw-translate-x {

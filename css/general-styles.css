@@ -3,8 +3,9 @@
   --text-color: #1A1A1A; /*Soft-black color */
   --black-color: #1A1A1A; /*Soft-black color */
   --primary-color: #1447E6; /* Blue color */
-  --accent-color: #D3D3D3; /*Light gray color */
+  --accent-color: #dadada; /*Light gray color */
   --text-size: 17px;
+  --text-big: 20px;
 }
 body {
   background-color: var(--off-white);
@@ -13,6 +14,13 @@ body {
   min-height: 100dvh;
   overflow-x: hidden;
   perspective: 1px;
+}
+.bg-offwhite {
+  background: var(--off-white);
+}
+.bg-blue {
+  background: var(--primary-color);
+  color: var(--off-white);
 }
 h1 {
   font-size: 36px;
@@ -52,18 +60,6 @@ p {
 main {
   position: relative;
   top: 60px;
-}
-button {
-  padding: .8em 1.6em;
-  background-color: var(--primary-color);
-  color: var(--off-white);
-  border: none;
-  cursor: pointer;
-  transition: border-radius 0.3s ease, opacity 0.3s ease;
-}
-button:hover {
-  border-radius: 7px;
-  opacity: .8;
 }
 .reveal-img {
   scale: .8;
