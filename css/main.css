@@ -188,7 +188,7 @@ html {
 .index-event-section .image-container:hover .content {
   opacity: 1;
 }
-.index-event-section button {
+.index-event-section .events-btn {
   background: var(--off-white);
   color: var(--primary-color);
 }
