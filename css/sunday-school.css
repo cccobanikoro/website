@@ -1,3 +1,15 @@
 .gallery-link {
   border-bottom: 3px solid ;
 }
+.sch-team {
+  gap: 30px;
+  display: grid;
+}
+@media (min-width: 731px) {
+  .sch-team {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}

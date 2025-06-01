@@ -1,3 +1,18 @@
+.choir-main {
+  background: var(--off-white);
+  top: 0;
+}
+.excos-section {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
+.choir-song {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
+.choir-grid img {
+  border-radius: 50%;
+}
 .choir-grid article {
   width: 100%;
 }
@@ -7,10 +22,21 @@
     align-items: stretch;
   }
 }
-@media (min-width: 1047px) {
+@media (min-width: 943px) {
   .choir-grid {
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
     gap: .9em;
+  }
+}
+@media (min-width: 1123px) {
+  .choir-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1356px) {
+  .choir-grid {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1400px;
   }
 }

@@ -29,11 +29,13 @@
   .event-grid {
     grid-template-columns: repeat(3, 1fr);
     max-width: 990px;
+    align-items: stretch;
   }
 }
 @media (min-width: 1294px) {
   .event-grid {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1290px;
+    align-items: stretch;
   }
 }

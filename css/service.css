@@ -1,6 +1,21 @@
 .dot-span {
   color: var(--primary-color);
 }
-.service-pg {
-  
+
+@media (min-width: 689px) {
+  .choir-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+}
+@media (min-width: 943px) {
+  .choir-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+}
+@media (min-width: 1123px) {
+  .choir-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
