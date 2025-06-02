@@ -230,10 +230,7 @@ footer .social-icons:hover {
     font-size: var(--text-big);
   }
   .index-about-section {
-    border-radius: 35px 35px 0 0;
-  }
-  .index-gallery-section .img-div {
-    /*max-width: ;*/
+    border-radius: 0 0;
   }
   .index-gallery-section .img-div img {
     width: 340px;
@@ -263,3 +260,4 @@ footer .social-icons:hover {
     width: 1020px;
   }
 }
+

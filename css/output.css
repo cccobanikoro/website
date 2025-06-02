@@ -1458,6 +1458,9 @@
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
   .pt-7 {
     padding-top: calc(var(--spacing) * 7);
   }
@@ -2451,7 +2454,7 @@ footer .social-icons:hover {
     font-size: var(--text-big);
   }
   .index-about-section {
-    border-radius: 35px 35px 0 0;
+    border-radius: 0 0;
   }
   .index-gallery-section .img-div img {
     width: 340px;
