@@ -122,7 +122,7 @@
   animation: slideInLeft 1s ease-in;
 }
 
-/*32 img carousel*/
+/*32 img carousel
 @keyframes adultSlider {
   0% {
     transform: translateX(0);
@@ -143,9 +143,9 @@
 
 .adult-slider {
   animation: adultSlider 80s linear infinite;
-}
+} */
 
-/*Img slider for 20 images*/
+/*Img slider for 20 images
 @keyframes slider {
   0%, 4% { transform: translateX(0); }
   5%, 9% { transform: translateX(-5%); } 
@@ -172,6 +172,7 @@
 .animate-slider {
   animation: slider 50s steps(1, end) infinite;
 }
+*/
 
 /*Img slider for 10 imgs*/
 @keyframes imageSlider {

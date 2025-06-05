@@ -2,36 +2,32 @@
   background: var(--off-white);
   top: 0;
 }
-.excos-section {
-  background: var(--primary-color);
-  color: var(--off-white);
-}
-.choir-song {
-  background: var(--primary-color);
-  color: var(--off-white);
-}
 .choir-grid img {
   border-radius: 50%;
 }
 .choir-grid article {
   width: 100%;
 }
-@media (min-width: 689px) {
+@media (min-width: 679px) {
   .choir-grid {
     grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
+    width: 580px;
   }
 }
 @media (min-width: 943px) {
   .choir-grid {
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
-    gap: .9em;
+    gap: 35px 30px;
+    width: 800px;
+    margin: 0 auto;
   }
 }
-@media (min-width: 1123px) {
+@media (min-width: 1153px) {
   .choir-grid {
     grid-template-columns: repeat(4, 1fr);
+    width: 1020px;
   }
 }
 @media (min-width: 1356px) {

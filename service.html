@@ -8,13 +8,14 @@
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!--Font Awesome for icons-->
   <script src="https://kit.fontawesome.com/f3fda0719d.js" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="./css/output.css">
   <title>CCC Obanikoro</title>
 </head>
+
 <body class="max-w-full h-screen overflow-x-hidden">
 
   <!--Navigation Menu -->
@@ -45,23 +46,177 @@
     </nav>
   </header> 
   
-  <main id="main" class="service-pg">
+  <main id="main" class="service-pg bg-gray-200">
 
-    <!-- Introduction and overview of church services -->
+    <!-- Introduction and overview of church services
     <section class="pt-8 mx-[5vw]">
       <p>
         At C.C.C Obanikoro Cathedral, we gather in worship, fellowship, and spiritual growth. Whether you're seeking a deeper connection with God or a welcoming faith community, our services are designed to uplift, inspire and transform lives.
       </p>
+    </section> -->
+
+    <!-- What to expect - First time visitors -->
+    <section class="flex flex-col gap-5 pt-6 mb-14 mx-[5vw]">
+      <h2 class="uppercase sm:text-left">
+        You Belong Here
+      </h2>
+      <p> 
+        At C.C.C Obanikoro Cathedral, we believe that everyone deserves to experience the love and grace of God. Our doors are open to people from all walks of life, and we strive to create a welcoming and inclusive environment for all. 
+        Whether you're seeking a deeper connection with God, a sense of community, or simply a place to belong, we invite you to join us. Let's worship, grow, and serve together!   
+      </p>
     </section>
 
     <!--Service times and schedule-->
-    <section class="mt-14 worship-section mx-[5vw]">
+    <section class="pb-14 worship-section mx-[5vw]">
+
       <h2 class="uppercase sm:text-left mb-6">
         Join us for worship
       </h2>
-      <p class="mb-3"> 
-        We gather for worship and fellowship at different intervals. We invite you to join us for our regular services and special events and be a part of this amazing church.
-      </p>
+
+      <!--Days for each Service and the time-->
+      <div class="service-grid">
+
+        <!--Service 1-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/sunday-service/bible-study.jpeg" alt="Sunday Bible study">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase h4-white">9:30am</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY SUNDAY</p>
+            <h3>Bible Study</h3>
+          </div>
+        </article>
+
+        <!--Service 2-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/church-gallery/Alexis250511-3440.jpg" alt="Sunday service">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">10:00AM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY SUNDAY</p>
+            <h3>Service</h3>
+          </div>
+        </article>
+
+        <!--Service 3-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/sunday-service/s1.jpg" alt="Midnight Vigil">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">12:00AM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY MONDAY</p>
+            <h3>Midnight Vigil</h3>
+          </div>
+        </article>
+
+        <!--Service 4-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/sunday-service/fruit.jpg" alt="Service for the needy">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase h4-white">9:00AM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY Wednesday</p>
+            <h3>Service for the Needy</h3>
+          </div>
+        </article>
+
+        <!--Service 5-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/sunday-service/bible.jpg" alt="Evening service">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">6:00PM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY Wednesday</p>
+            <h3>Service for Mercy</h3>
+          </div>
+        </article>
+
+        <!--Service 6-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/prophets/p2.jpg" alt="Prophets service">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">11:00PM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY MONDAY</p>
+            <h3>Prophets and Prophetess Service</h3>
+          </div>
+        </article>
+
+        <!--Service 7-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/sunday-sch/baby.jpg" alt="Service for Pregnant woman">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">3:00PM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY Friday</p>
+            <h3>Special Service for Pregnant Women</h3>
+          </div>
+        </article>
+
+        <!--Service 8-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/church-gallery/Alexis250511-3220.jpg" alt="Evening service">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">6:00PM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY Friday</p>
+            <h3>Service for Power</h3>
+          </div>
+        </article>
+
+        <!--Service 9-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/church-gallery/g9.jpg" alt="Sidemen and Sidewomen service">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase h4-white">11:00PM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">EVERY Friday</p>
+            <h3>Sidemen and Sidewomen service</h3>
+          </div>
+        </article>
+
+        <!--Service 10-->
+        <article class="service-article">
+          <div class="service-div-img relative">
+            <img src="./images/altar1.jpg" alt="New moon service">
+            <div class="absolute bottom-0 right-0 p-2 text-center z-20 bg- backdrop-blur-md">
+              <h4 class="uppercase">10:00PM</h4>
+            </div>
+          </div>
+          <div class="text-center mt-2">
+            <p class="p-days uppercase">First Thursday of the month</p>
+            <h3>New moon service</h3>
+          </div>
+        </article>
+
+      </div>
 
       <!--Days for each Service and the time
       <div class="grid gap-3 my-3 items-stretch service-grid">
@@ -150,107 +305,8 @@
             </div>
           </div>
         </article>
-      </div> -->
+      </div>  -->
 
-    </section>
-
-    <!-- Mode of Worship and Doctrine of the church-->
-    <section class="mt-14 mx-[5vw]">
-      <h2 class="uppercase sm:text-left mb-6">
-        Mode of Worship and Doctrine of the Church
-      </h2>
-      <p class="mb-3"> 
-        Our mode of worship is rooted in the Bible and guided by the following principles:
-      </p>
-      <div>
-        <ul class="space-y-2">
-
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Use of candles: Rev 4 vs 5 (altar), Zechariah 4 vs 4-11.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Use of incense: Rev 5 v 8, Exodus 30 v 8-9.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Holy, Holy, Holy, to the Lord God of hosts: Rev 4 vs 8, Isaiah 6 vs 2-3.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Hallelujah in the four corners of the earth: Rev 7 v 1, Rev 19 v 1-4.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Facing of the East for Prayer: Gen 3 v 24.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Bowing down and raising of hands in Worship: Exodus 4 vs 31, Nehemiah 8 vs 6, Rev 4 vs 10.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>The starting of prayers by first calling (i) Jehovah: Exodus 6 vs 2-3, (ii) Jesus Christ: Matthew 11 vs 24, (iii) Holy Michael: Daniel 10 vs 12-13.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Female members are forbidden from entering the altar or leading the congregation in worship: 1st Corinthians 14 vs 34, 1st Timothy 2 vs 12. </span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>The position of the Angels in the divine call of C.C.C. Hymn 331.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Need for Thanks Offering: Exo 34 v 20.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span> Alter light to burn regularly: Lev 24 v 4, Exo 27 v 20. </span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>New moon service: Num 10 v 10, Psalm 81 v 3, Ezekiel 46 v 1 & 3.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Washing of feet: John 13 v 5, 14 & 15.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Use of Perfume: Matt 26 v 6-7.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Black and red apparels are forbidden for Celestians expect work suit.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>No alcoholic and other intoxicants: Isaiah 5, Lev 10 v 8-9, Gen 9 v 20-25, 1st Cor 3 v 16-17.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span> Woman mensuration and purification: Lev 12 v 1-6, Lev 15 v 28-30.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="dot-span mr-2">•</span>
-            <span>Smoking of cigarette and hemp is forbidden.</span>
-          </li>
-        </ul>
-      </div>
-
-    </section>
-    
-    <!-- What to expect - First time visitors -->
-    <section class="flex flex-col gap-5 pb-10 mt-14 mx-[5vw]">
-      <h2 class="uppercase sm:text-left">
-        You Belong Here
-      </h2>
-      <p> 
-        At C.C.C Obanikoro Cathedral, we believe that everyone deserves to experience the love and grace of God. Our doors are open to people from all walks of life, and we strive to create a welcoming and inclusive environment for all. 
-        Whether you're seeking a deeper connection with God, a sense of community, or simply a place to belong, we invite you to join us. Let's worship, grow, and serve together!   
-      </p>
     </section>
 
   </main>

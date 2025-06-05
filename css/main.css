@@ -3,11 +3,9 @@
 @import url(./sunday-school.css);
 @import url(./choir.css);
 @import url(./gallery.css);
-@import url(./contact.css);
 @import url(./about.css);
 @import url(./navbar.css);
 @import url(./animations.css);
-@import url(./location.css);
 @import url(./service.css);
 @import url(./button.css);
 
@@ -59,7 +57,15 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  color: var(--black-color);
   gap: 30px;
+}
+.hero-h1 {
+  color: var(--black-color);
+}
+#index-bible-text1, #index-bible-text2 {
+  font-size: var(--text-big);
+  text-shadow: 3px 3px 3px var(--off-white);
 }
 
 /*Index-About-Section*/
@@ -210,6 +216,9 @@ footer .link-hover:hover {
 footer .social-icons:hover {
   translate: scale(1.2);
   transition: translate .7s ease;
+}
+footer .logo-name {
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 601px) {

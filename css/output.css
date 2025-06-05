@@ -4,11 +4,9 @@
 @import url(./sunday-school.css);
 @import url(./choir.css);
 @import url(./gallery.css);
-@import url(./contact.css);
 @import url(./about.css);
 @import url(./navbar.css);
 @import url(./animations.css);
-@import url(./location.css);
 @import url(./service.css);
 @import url(./button.css);
 @layer theme, base, components, utilities;
@@ -20,14 +18,13 @@
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-gray-100: oklch(0.967 0.003 264.542);
+    --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-700: oklch(0.373 0.034 259.733);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-light: 300;
-    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --tracking-tighter: -0.05em;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
@@ -243,6 +240,12 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -251,6 +254,9 @@
   }
   .isolation-auto {
     isolation: auto;
+  }
+  .z-6 {
+    z-index: 6;
   }
   .z-20 {
     z-index: 20;
@@ -372,6 +378,9 @@
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -386,9 +395,6 @@
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
-  }
-  .mt-14 {
-    margin-top: calc(var(--spacing) * 14);
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -537,14 +543,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-\[2\.5\%\] {
-    width: 2.5%;
-  }
-  .w-\[5\%\] {
-    width: 5%;
   }
   .w-\[10\%\] {
     width: 10%;
@@ -566,12 +569,6 @@
   }
   .w-\[1000\%\] {
     width: 1000%;
-  }
-  .w-\[2000\%\] {
-    width: 2000%;
-  }
-  .w-\[4000\%\] {
-    width: 4000%;
   }
   .w-full {
     width: 100%;
@@ -1250,6 +1247,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1428,6 +1428,9 @@
   .object-top {
     object-position: top;
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -1449,11 +1452,8 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
@@ -1481,9 +1481,6 @@
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
-  }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
   }
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
@@ -1544,10 +1541,6 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
-  }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -1629,9 +1622,6 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
-  }
-  .text-black {
-    color: var(--color-black);
   }
   .text-gray-700 {
     color: var(--color-gray-700);
@@ -2165,6 +2155,11 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .sm\:pt-0 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
   .sm\:pb-1\.5 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 1.5);
@@ -2301,7 +2296,15 @@ html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  color: var(--black-color);
   gap: 30px;
+}
+.hero-h1 {
+  color: var(--black-color);
+}
+#index-bible-text1, #index-bible-text2 {
+  font-size: var(--text-big);
+  text-shadow: 3px 3px 3px var(--off-white);
 }
 .index-about-section {
   border-radius: 30px 30px 0 0;
@@ -2435,6 +2438,9 @@ footer .link-hover:hover {
 footer .social-icons:hover {
   translate: scale(1.2);
   transition: translate .7s ease;
+}
+footer .logo-name {
+  font-family: 'Raleway', sans-serif;
 }
 @media (min-width: 601px) {
   .index-event-section .images-events {

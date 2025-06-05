@@ -1,10 +1,12 @@
 :root {
   --off-white: #FAFAFA; /* Off-white for body-bg*/
   --text-color: #1A1A1A; /*Soft-black color */
-  --black-color: #1A1A1A; /*Soft-black color */
+  --black-color: #000000; /*black color */
   --primary-color: #1447E6; /* Blue color */
+  --secondary-color: #; /* color */
   --accent-color: #dadada; /*Light gray color */
   --text-size: 17px;
+  --text-small: 14px;
   --text-big: 20px;
 }
 body {
@@ -23,7 +25,8 @@ body {
   color: var(--off-white);
 }
 h1 {
-  font-size: 36px;
+  font-size: 38px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: -1.5px;
   line-height: 1.5;
@@ -31,6 +34,7 @@ h1 {
 }
 h2 {
   font-size: 30px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 1.4;
@@ -38,6 +42,7 @@ h2 {
 }
 h3 {
   font-size: 24px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: -0.5px;
   line-height: 1.4;
@@ -45,6 +50,7 @@ h3 {
 }
 h4, h5 {
   font-size: 20px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: -0.5px;
   line-height: 1.4;
@@ -104,6 +110,11 @@ main {
   animation-timeline: view();
   animation-range: entry 40% cover 30%;
 }
+@media (max-width: 641px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 /*
 .reveal-scroll {
   animation-delay: 3s;
@@ -112,25 +123,6 @@ main {
   animation-timeline: scroll();
   animation-range: entry 10% cover 30%;
 } */
-.reveal-element1 {
-  animation-delay: 4s;
-}
-.reveal-element2 {
-  animation-delay: 5s;
-}
-.reveal-element3 {
-  animation-delay: 6s;
-}
-.reveal-element4 {
-  animation-delay: 1.1s;
-}
-.reveal-element5 {
-  animation-delay: 1.4s;
-}
-.reveal-element6 {
-  animation-delay: 1.7s;
-}
-
 
 /*  This used for headings with a border bottom
 .index-about-section h2 {
