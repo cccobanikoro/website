@@ -255,9 +255,6 @@
   .isolation-auto {
     isolation: auto;
   }
-  .z-6 {
-    z-index: 6;
-  }
   .z-20 {
     z-index: 20;
   }
@@ -542,9 +539,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
